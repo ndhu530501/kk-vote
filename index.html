@@ -1,0 +1,3127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMzA3ODgxNzg2NzY2MTMwNTQ0OCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzJlY2FhYzdlYmM3NThmZjRfaW5kZXguaHRtbC0zNiJ9LCJleHAiOjE3OTUwNTI5OTksImlhdCI6MTc5NTA0OTM5OSwiYWxnIjoiUlMyNTYifQ.kLmqMNyZWkmtQ592qzFvexfYNyJGzalTW6frM0O2ieuWDA8oBP5r72uR3vPZHQoHTh5sYj9sd9LE1bVrD3fh50UcU3CvXutY5HCCwp5a6Un7YbcuNT0TU-YzYmiyq9GBEaTfGOZN5XoJN6rtDrhavhQotlYWrEy0KEX_fk1MSetGx7M4t-ZTFzMLBi5ZnLY1LZyne27NcOiQewTv8llU3Q692m_wnJEhrIY0Wqg7va372gORSBylfZc8TJHxXTa5FXIcSUwtR1gAhbLp3uxPYcgycykhwvWxUTnt82VV8SuajwGAltOZF-KSo1xYDHRNaBMy2d-MS2SStM90HDDVDQ","c_2ecaac7ebc758ff4_index.html-36")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>學生獎懲委員會投票與統計系統</title>
+  <!-- 載入 Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 載入 SheetJS (xlsx 0.18.5) 用於匯入與匯出 Excel -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
+  <!-- 載入 Firebase v10.12.2 UMD compat 版本（避免 ES Module 跨網域或預覽白屏問題） -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <!-- 載入 Inter 與 Noto Sans TC 字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans TC"', 'Inter', 'system-ui', '-apple-system', 'sans-serif']
+          },
+          colors: {
+            slateBrand: {
+              900: '#0f2942',
+              800: '#163a5f',
+              700: '#1e4d7b',
+              100: '#e6eff8',
+              50: '#f4f8fc'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #f3f4f6;
+      color: #1f2937;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: #ffffff !important;
+      }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Noto Sans TC", Inter, system-ui, -apple-system, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.inset-0{inset:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.ml-1{margin-left:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-2\.5{height:0.625rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-2\.5{width:0.625rem}.w-3\.5{width:0.875rem}.w-32{width:8rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-full{width:100%}.min-w-\[260px\]{min-width:260px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-4{border-bottom-width:4px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-amber-300\/70{border-color:rgb(252 211 77 / 0.7)}.border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-200\/80{border-color:rgb(229 231 235 / 0.8)}.border-gray-200\/90{border-color:rgb(229 231 235 / 0.9)}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slateBrand-700{--tw-border-opacity:1;border-color:rgb(30 77 123 / var(--tw-border-opacity, 1))}.border-slateBrand-700\/20{border-color:rgb(30 77 123 / 0.2)}.border-transparent{border-color:transparent}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200\/80{background-color:rgb(229 231 235 / 0.8)}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139 / var(--tw-bg-opacity, 1))}.bg-slate-950\/50{background-color:rgb(2 6 23 / 0.5)}.bg-slateBrand-100{--tw-bg-opacity:1;background-color:rgb(230 239 248 / var(--tw-bg-opacity, 1))}.bg-slateBrand-50{--tw-bg-opacity:1;background-color:rgb(244 248 252 / var(--tw-bg-opacity, 1))}.bg-slateBrand-50\/90{background-color:rgb(244 248 252 / 0.9)}.bg-slateBrand-700{--tw-bg-opacity:1;background-color:rgb(30 77 123 / var(--tw-bg-opacity, 1))}.bg-slateBrand-800{--tw-bg-opacity:1;background-color:rgb(22 58 95 / var(--tw-bg-opacity, 1))}.bg-slateBrand-800\/80{background-color:rgb(22 58 95 / 0.8)}.bg-slateBrand-900{--tw-bg-opacity:1;background-color:rgb(15 41 66 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.p-1{padding:0.25rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-3{padding-bottom:0.75rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.tracking-wide{letter-spacing:0.025em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-current{color:currentColor}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-slateBrand-700{--tw-text-opacity:1;color:rgb(30 77 123 / var(--tw-text-opacity, 1))}.text-slateBrand-800{--tw-text-opacity:1;color:rgb(22 58 95 / var(--tw-text-opacity, 1))}.text-slateBrand-900{--tw-text-opacity:1;color:rgb(15 41 66 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-emerald-900{--tw-text-opacity:1;color:rgb(6 78 59 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-70{opacity:0.7}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-\[1px\]{--tw-backdrop-blur:blur(1px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-slateBrand-700:hover{--tw-border-opacity:1;border-color:rgb(30 77 123 / var(--tw-border-opacity, 1))}.hover\:bg-amber-100:hover{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-100:hover{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.hover\:bg-red-50:hover{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.hover\:bg-red-500:hover{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.hover\:bg-slateBrand-100:hover{--tw-bg-opacity:1;background-color:rgb(230 239 248 / var(--tw-bg-opacity, 1))}.hover\:bg-slateBrand-50\/50:hover{background-color:rgb(244 248 252 / 0.5)}.hover\:bg-slateBrand-700:hover{--tw-bg-opacity:1;background-color:rgb(30 77 123 / var(--tw-bg-opacity, 1))}.hover\:bg-slateBrand-800:hover{--tw-bg-opacity:1;background-color:rgb(22 58 95 / var(--tw-bg-opacity, 1))}.hover\:bg-slateBrand-800\/60:hover{background-color:rgb(22 58 95 / 0.6)}.hover\:text-amber-700:hover{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.hover\:opacity-100:hover{opacity:1}.focus\:border-amber-400:focus{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.focus\:border-slateBrand-700:focus{--tw-border-opacity:1;border-color:rgb(30 77 123 / var(--tw-border-opacity, 1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:text-gray-900:focus{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-slateBrand-700:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(30 77 123 / var(--tw-ring-opacity, 1))}.focus\:ring-slateBrand-700\/30:focus{--tw-ring-color:rgb(30 77 123 / 0.3)}.active\:scale-\[0\.99\]:active{--tw-scale-x:0.99;--tw-scale-y:0.99;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.disabled\:opacity-60:disabled{opacity:0.6}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:w-36{width:9rem}.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-between{justify-content:space-between}.sm\:gap-4{gap:1rem}.sm\:p-6{padding:1.5rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-center{align-items:center}.lg\:justify-between{justify-content:space-between}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="min-h-screen flex flex-col">
+  <!-- 頂部導覽與會議標題區 -->
+  <header class="bg-slateBrand-900 text-white shadow-md border-b-4 border-amber-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div class="space-y-1.5 flex-1">
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-slateBrand-800 text-amber-300 text-xs font-medium tracking-wide">
+            <span>校務獎懲審議系統</span>
+            <span>•</span>
+            <span>支援雲端即時連線與 Excel 統計匯出</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <label for="meetingTitleInput" class="sr-only">會議／表單標題</label>
+            <input id="meetingTitleInput" type="text" value="國中獎懲1151118" class="bg-slateBrand-800/80 hover:bg-slateBrand-800 focus:bg-white focus:text-gray-900 text-white text-xl sm:text-2xl font-bold px-3 py-1.5 rounded-lg border border-slateBrand-700 focus:border-amber-400 focus:outline-none transition w-full sm:w-auto min-w-[260px]" placeholder="請輸入會議或表單標題">
+            <span class="text-xs text-slate-300 hidden sm:inline">（點擊標題可直接修改並同步）</span>
+          </div>
+          <div class="pt-1">
+            <label for="meetingDescInput" class="sr-only">表單說明</label>
+            <input id="meetingDescInput" type="text" value="請依各案懲處事由與獎懲條例審議投票；每案提供「原懲處建議」與「依獎懲會建議（可複選具體處分及補充說明）」兩項主選項。" class="bg-transparent hover:bg-slateBrand-800/60 focus:bg-white focus:text-gray-900 text-slate-200 text-sm px-2.5 py-1 rounded-md border border-transparent focus:border-amber-400 focus:outline-none transition w-full max-w-4xl" placeholder="請輸入表單說明文字">
+          </div>
+        </div>
+
+        <!-- 頂部功能按鈕群 -->
+        <div class="flex flex-wrap items-center gap-2.5 no-print">
+          <button id="cloudConfigBtn" type="button" onclick="window.openCloudConfigModal()" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slateBrand-800 hover:bg-slateBrand-700 text-amber-300 border border-slateBrand-700 text-sm font-semibold transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+            </svg>
+            <span>雲端連線設定</span>
+          </button>
+
+          <label for="excelFileInput" class="cursor-pointer inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-[0.99] text-white text-sm font-semibold shadow transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
+            </svg>
+            <span>匯入 Excel</span>
+          </label>
+          <input id="excelFileInput" type="file" accept=".xlsx,.xls,.csv" class="hidden" onchange="window.handleExcelFileUpload(event)">
+
+          <button id="downloadSampleBtn" type="button" onclick="window.downloadSampleExcel()" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slateBrand-800 hover:bg-slateBrand-700 text-slate-100 border border-slateBrand-700 text-sm font-semibold transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <span>下載範例 Excel</span>
+          </button>
+
+          <button id="exportExcelBtn" type="button" onclick="window.exportVotesToExcel()" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 active:scale-[0.99] text-slate-950 text-sm font-bold shadow transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span>匯出統計 Excel</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 雲端連線狀態與會議室房間碼控制列 -->
+  <section class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4 no-print">
+    <div class="bg-white rounded-2xl p-4 border border-gray-200/90 shadow-sm flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div class="flex flex-wrap items-center gap-3">
+        <div id="syncStatusBadge" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-900 border border-emerald-200 text-xs font-bold">
+          <span id="syncStatusDot" class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="syncStatusText">雲端即時同步中（房間：1151118）</span>
+        </div>
+        <div id="syncDetailText" class="text-xs text-gray-500">所有連線至相同房間碼的委員將即時同步議程與開票結果</div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <label for="roomCodeInput" class="text-xs font-bold text-gray-700 whitespace-nowrap">會議室房間碼：</label>
+        <input id="roomCodeInput" type="text" value="1151118" placeholder="例如：1151118" class="w-32 sm:w-36 px-3 py-1.5 rounded-xl border border-gray-300 text-sm font-bold text-slateBrand-900 bg-gray-50 focus:bg-white focus:outline-none focus:border-slateBrand-700">
+        <button id="switchRoomBtn" type="button" onclick="window.handleSwitchRoom()" class="px-3.5 py-1.5 rounded-xl bg-slateBrand-800 hover:bg-slateBrand-700 text-white text-xs font-bold transition">
+          切換 / 加入會議室
+        </button>
+        <button id="copyInviteLinkBtn" type="button" onclick="window.copyInviteLink()" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs font-bold transition">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          <span>複製委員投票連結</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 系統通知橫幅（取代 alert） -->
+  <div id="toastContainer" class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-4 no-print">
+    <div id="toastBox" class="flex items-start justify-between gap-3 px-4 py-3 rounded-xl border text-sm font-medium shadow-sm transition bg-slateBrand-50 border-slateBrand-700/20 text-slateBrand-900">
+      <div class="flex items-center gap-2.5">
+        <span id="toastIcon">ℹ️</span>
+        <span id="toastMessage">已複製目前網址，但偵測到您正在「預覽沙盒視窗」中，外部手機無法開啟此臨時網址；請依視窗步驟下載 index.html 部署至正式網址後再分享！</span>
+      </div>
+      <button id="toastCloseBtn" type="button" onclick="window.hideToast()" class="text-current opacity-70 hover:opacity-100 font-bold px-1" aria-label="關閉通知">
+        ✕
+      </button>
+    </div>
+  </div>
+
+  <!-- 狀態概覽列 -->
+  <section class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-5">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div class="bg-white rounded-2xl p-4 border border-gray-200/90 shadow-sm">
+        <div class="text-xs font-medium text-gray-500">已匯入審議案件</div>
+        <div id="statCasesCount" class="mt-1 text-2xl font-bold text-slateBrand-900">26 <span class="text-sm font-normal text-gray-500">案</span></div>
+        <div id="statSourceLabel" class="mt-1 text-xs text-gray-400 truncate">範例資料（115年11月18日獎懲建議表，共26筆）</div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 border border-gray-200/90 shadow-sm">
+        <div class="text-xs font-medium text-gray-500">已送出委員票數</div>
+        <div id="statBallotsCount" class="mt-1 text-2xl font-bold text-emerald-700">0 <span class="text-sm font-normal text-gray-500">位委員</span></div>
+        <div id="statRolesSummary" class="mt-1 text-xs text-gray-400 truncate">行政 0 / 教師 0 / 家長 0 / 學生 0</div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 border border-gray-200/90 shadow-sm">
+        <div class="text-xs font-medium text-gray-500">目前填寫進度</div>
+        <div id="statCurrentProgress" class="mt-1 text-2xl font-bold text-slateBrand-700">0 / 26 <span class="text-sm font-normal text-gray-500">題</span></div>
+        <div class="mt-2 w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
+          <div id="statCurrentProgressBar" class="bg-slateBrand-700 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 border border-gray-200/90 shadow-sm">
+        <div class="text-xs font-medium text-gray-500">工作表選擇（匯入時）</div>
+        <div class="mt-1 flex items-center gap-2">
+          <select id="sheetSelect" onchange="window.handleSheetChange(event)" disabled="" class="w-full text-sm font-semibold text-gray-800 bg-gray-50 border border-gray-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-slateBrand-700 disabled:opacity-60"><option value="工作表2（範例）" selected="">工作表2（範例）</option></select>
+        </div>
+        <div class="mt-1 text-xs text-gray-400">切換工作表將重新解析案件</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主功能分頁切換列 -->
+  <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-5 no-print">
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 pb-3">
+      <div class="inline-flex rounded-xl bg-gray-200/80 p-1">
+        <button id="tabVoteBtn" type="button" onclick="window.switchTab('vote')" class="px-4 py-2 rounded-lg text-sm font-bold bg-white text-slateBrand-900 shadow-sm transition">
+          1. 委員投票區
+        </button>
+        <button id="tabStatsBtn" type="button" onclick="window.switchTab('stats')" class="px-4 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-gray-900 transition flex items-center gap-1.5">
+          <span>2. 即時開票統計與匯出</span>
+          <span id="tabBallotBadge" class="px-2 py-0.5 text-xs rounded-full bg-slateBrand-100 text-slateBrand-800 font-bold">0</span>
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2 text-xs text-gray-500">
+        <button id="loadSampleBtn" type="button" onclick="window.loadSampleData()" class="px-3 py-1.5 rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 font-medium transition">
+          載入預設 26 筆範例案件
+        </button>
+        <button id="resetAllDataBtn" type="button" onclick="window.resetAllVotes()" class="px-3 py-1.5 rounded-lg border border-red-200 bg-white text-red-600 hover:bg-red-50 font-medium transition">
+          清空所有投票紀錄
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主要內容區 -->
+  <main class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1">
+    <!-- 分頁一：委員投票作業 -->
+    <div id="votePanel" class="space-y-6">
+      <!-- 委員基本資料與快捷操作卡 -->
+      <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+        <div class="h-1.5 bg-slateBrand-800"></div>
+        <div class="p-5 sm:p-6 space-y-5">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 pb-3">
+            <div>
+              <h2 class="text-lg font-bold text-slateBrand-900">委員身分與基本資料</h2>
+              <p class="text-xs text-gray-500 mt-0.5"><span class="text-red-500 font-bold">*</span> 為必填欄位。送出後可切換下一位委員繼續投票，或至「即時開票統計與匯出」檢視總表與修改票單。</p>
+            </div>
+            <div id="editingModeBadge" class="hidden items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold">
+              <span>正在修改既有委員票單</span>
+              <button id="cancelEditBtn" type="button" onclick="window.cancelEditBallot()" class="underline hover:text-amber-700 ml-1">取消修改</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- 委員身分 -->
+            <div>
+              <label class="block text-sm font-bold text-gray-800 mb-2">
+                委員身分 <span class="text-red-500">*</span>
+              </label>
+              <div id="memberRoleGroup" class="grid grid-cols-2 gap-2.5">
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 hover:border-slateBrand-700 hover:bg-slateBrand-50/50 cursor-pointer transition">
+                  <input type="radio" name="memberRole" value="行政代表" onchange="window.handleRoleChange(this.value)" class="w-4 h-4 text-slateBrand-800 focus:ring-slateBrand-700">
+                  <span class="text-sm font-medium text-gray-800">行政代表</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 hover:border-slateBrand-700 hover:bg-slateBrand-50/50 cursor-pointer transition">
+                  <input type="radio" name="memberRole" value="教師代表" onchange="window.handleRoleChange(this.value)" class="w-4 h-4 text-slateBrand-800 focus:ring-slateBrand-700">
+                  <span class="text-sm font-medium text-gray-800">教師代表</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 hover:border-slateBrand-700 hover:bg-slateBrand-50/50 cursor-pointer transition">
+                  <input type="radio" name="memberRole" value="家長代表" onchange="window.handleRoleChange(this.value)" class="w-4 h-4 text-slateBrand-800 focus:ring-slateBrand-700">
+                  <span class="text-sm font-medium text-gray-800">家長代表</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 hover:border-slateBrand-700 hover:bg-slateBrand-50/50 cursor-pointer transition">
+                  <input type="radio" name="memberRole" value="學生代表" onchange="window.handleRoleChange(this.value)" class="w-4 h-4 text-slateBrand-800 focus:ring-slateBrand-700">
+                  <span class="text-sm font-medium text-gray-800">學生代表</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 委員姓名與快捷按鈕 -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <label for="memberNameInput" class="block text-sm font-bold text-gray-800 mb-2">
+                  委員姓名 <span class="text-red-500">*</span>
+                </label>
+                <input id="memberNameInput" type="text" oninput="window.handleMemberNameInput(this.value)" placeholder="請輸入委員姓名（例如：王大明）" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-slateBrand-700/30 focus:border-slateBrand-700 transition">
+              </div>
+
+              <div class="flex flex-wrap items-center gap-2 mt-4 pt-3 border-t border-gray-100 no-print">
+                <button id="selectAllOriginalBtn" type="button" onclick="window.selectAllOriginalOption()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300/70 text-xs font-semibold transition">
+                  <span>一鍵全選：原懲處建議</span>
+                </button>
+                <button id="selectAllDefaultBtn" type="button" onclick="window.selectAllDefaultOption()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slateBrand-50 hover:bg-slateBrand-100 text-slateBrand-900 border border-slateBrand-700/20 text-xs font-semibold transition">
+                  <span>一鍵全選：依獎懲會建議</span>
+                </button>
+                <button id="clearCurrentVotesBtn" type="button" onclick="window.clearCurrentVotes()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold transition">
+                  <span>清除本委員選擇</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- 雲端連線設定 Modal（供貼上自訂 Firebase Config JSON、複製免設定連結與查看申請步驟） -->
+  <div id="cloudConfigModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/50 backdrop-blur-[1px] p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-xl border border-gray-100 space-y-4 my-auto">
+      <div class="flex items-center justify-between border-b border-gray-100 pb-3">
+        <h3 class="text-lg font-bold text-slateBrand-900">雲端資料庫連線設定（Firebase 跨裝置即時同步）</h3>
+        <button type="button" onclick="window.closeCloudConfigModal()" class="text-gray-400 hover:text-gray-700 font-bold px-1">✕</button>
+      </div>
+
+      <!-- Firebase 免費申請 4 步驟教學 -->
+      <div class="bg-slateBrand-50/90 border border-slateBrand-700/20 rounded-xl p-4 text-xs text-gray-700 space-y-2">
+        <div class="font-bold text-slateBrand-900 text-sm">📌 Firebase 免費申請 4 步驟（設定一次即可讓所有委員手機免設定自動連線）：</div>
+        <ol class="list-decimal list-inside space-y-1.5 leading-relaxed">
+          <li>前往 <a href="https://console.firebase.google.com/" target="_blank" rel="noopener noreferrer" class="text-slateBrand-800 underline font-bold">Firebase Console</a> 建立免費專案，進入左側 <strong>Build &gt; Authentication</strong> 啟用「匿名（Anonymous）」登入。</li>
+          <li>進入左側 <strong>Build &gt; Firestore Database</strong> 建立資料庫（選擇「測試模式」啟動，或於規則中開放 <code class="bg-white px-1.5 py-0.5 rounded border border-gray-200 font-mono text-[11px]">allow read, write: if request.auth != null;</code>）。</li>
+          <li>點擊左上角齒輪 <strong>專案設定 &gt; 您的應用程式 &gt; 網頁 (&lt;/&gt;)</strong>，註冊應用程式後複製 <code class="bg-white px-1.5 py-0.5 rounded border border-gray-200 font-mono text-[11px]">firebaseConfig</code> 大括號內的 JSON 設定貼入下方。</li>
+          <li>儲存連線後，只要點選<strong>「複製帶雲端設定的委員投票連結」</strong>傳給委員，委員手機點開即自動連上同一雲端會議室，無需任何設定！</li>
+        </ol>
+      </div>
+
+      <div>
+        <label for="firebaseConfigTextarea" class="block text-xs font-bold text-gray-700 mb-1.5">Firebase Config JSON 設定內容：</label>
+        <textarea id="firebaseConfigTextarea" rows="6" placeholder="{&quot;apiKey&quot;: &quot;AIzaSy...&quot;, &quot;authDomain&quot;: &quot;your-app.firebaseapp.com&quot;, &quot;projectId&quot;: &quot;your-app&quot;, &quot;storageBucket&quot;: &quot;...&quot;, &quot;messagingSenderId&quot;: &quot;...&quot;, &quot;appId&quot;: &quot;...&quot;}" class="w-full px-3 py-2.5 rounded-xl border border-gray-300 font-mono text-xs text-gray-800 focus:outline-none focus:border-slateBrand-700"></textarea>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-gray-100">
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="button" onclick="window.clearFirebaseConfig()" class="px-3.5 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold transition">
+            清除自訂設定（切換本機同步）
+          </button>
+          <button type="button" onclick="window.copyInviteLink(true)" class="px-3.5 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs font-bold transition">
+            複製帶雲端設定的部署專用連結
+          </button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="window.closeCloudConfigModal()" class="px-4 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold transition">
+            取消
+          </button>
+          <button type="button" onclick="window.saveAndConnectFirebaseConfig()" class="px-4 py-2 rounded-xl bg-slateBrand-800 hover:bg-slateBrand-700 text-white text-xs font-bold transition">
+            儲存並測試連線
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 預覽環境偵測與網站部署引導 Modal（解決臨時預覽網址無法從外部手機開啟的問題） -->
+  <div id="deployGuideModal" class="fixed inset-0 z-50 items-center justify-center bg-slate-950/50 backdrop-blur-[1px] p-4 overflow-y-auto flex">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 shadow-xl border border-gray-100 space-y-4 my-auto">
+      <div class="flex items-center justify-between border-b border-gray-100 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🌐</span>
+          <h3 class="text-lg font-bold text-slateBrand-900">如何讓委員手機連上線？</h3>
+        </div>
+        <button type="button" onclick="window.closeDeployGuideModal()" class="text-gray-400 hover:text-gray-700 font-bold px-1">✕</button>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-3.5 text-xs text-amber-950 space-y-1.5 leading-relaxed">
+        <div class="font-bold text-sm">⚠️ 目前偵測到您正在「預覽沙盒視窗」中操作：</div>
+        <p>
+          預覽環境產生的臨時網址（<code id="previewHostLabel" class="bg-white/80 px-1.5 py-0.5 rounded border border-amber-300 font-mono text-[11px]">blob:</code>）僅限您目前這台電腦的瀏覽器檢視，<strong>委員從外部手機或電腦點擊會顯示無法連線</strong>。
+        </p>
+      </div>
+
+      <div class="space-y-3 text-xs sm:text-sm text-gray-700">
+        <div class="font-bold text-slateBrand-900">只需極簡 3 步驟，免費取得正式公開網址並分享給全體委員：</div>
+        <div class="space-y-2.5 bg-gray-50 rounded-xl p-4 border border-gray-200/80">
+          <div class="flex items-start gap-2.5">
+            <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-slateBrand-800 text-white text-xs font-bold shrink-0 mt-0.5">1</span>
+            <div>
+              <strong>下載完整單頁網頁檔：</strong>點擊下方綠色按鈕，將本系統下載為 <code class="bg-white px-1.5 py-0.5 rounded border border-gray-200 font-mono text-xs">index.html</code> 檔案。
+            </div>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-slateBrand-800 text-white text-xs font-bold shrink-0 mt-0.5">2</span>
+            <div>
+              <strong>免費拖曳上線（免寫程式）：</strong>開啟 <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer" class="text-slateBrand-800 underline font-bold">Netlify Drop</a>（或上傳至 GitHub Pages），將下載的 <code class="bg-white px-1.5 py-0.5 rounded border border-gray-200 font-mono text-xs">index.html</code> 拖曳進去，3 秒即可獲得正式 <code class="bg-white px-1.5 py-0.5 rounded border border-gray-200 font-mono text-xs">https://...</code> 網址。
+            </div>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-slateBrand-800 text-white text-xs font-bold shrink-0 mt-0.5">3</span>
+            <div>
+              <strong>複製正式投票連結給委員：</strong>開啟您的正式 <code class="bg-white px-1.5 py-0.5 rounded border border-gray-200 font-mono text-xs">https://</code> 網址後，再點擊「複製委員投票連結」（系統會自動將房間碼與雲端設定編碼進連結），貼至 LINE 群組即可讓委員手機免設定直接投票！
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-gray-100">
+        <button type="button" onclick="window.downloadAppHtmlFile()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-bold shadow-sm transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          <span>一鍵下載 index.html 檔案</span>
+        </button>
+        <button type="button" onclick="window.closeDeployGuideModal()" class="px-4 py-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs sm:text-sm font-semibold transition">
+          我知道了
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 自訂確認視窗 Modal（取代 confirm） -->
+  <div id="confirmModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/50 backdrop-blur-[1px] p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-gray-100 space-y-4">
+      <h3 id="confirmModalTitle" class="text-lg font-bold text-gray-900">確認操作</h3>
+      <p id="confirmModalMessage" class="text-sm text-gray-600 leading-relaxed"></p>
+      <div class="flex justify-end gap-2.5 pt-2">
+        <button type="button" onclick="window.closeConfirmModal(false)" class="px-4 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold transition">
+          取消
+        </button>
+        <button type="button" onclick="window.closeConfirmModal(true)" class="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-sm font-bold transition">
+          確定執行
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // 常數定義
+      var STORAGE_KEY_PREFIX = 'discipline_committee_room_v5_';
+      var CUSTOM_FIREBASE_CFG_KEY = 'discipline_committee_custom_firebase_cfg_v1';
+      var DEFAULT_COMMITTEE_OPTION = '依獎懲會建議';
+      var COMMITTEE_SUB_OPTIONS = [
+        '警告乙次',
+        '警告2次',
+        '小過乙次',
+        '小過2次',
+        '大過乙次',
+        '大過2次',
+        '大過3次'
+      ];
+
+      // 內建完整 26 筆預設資料（115年11月18日國中獎懲建議表）
+      var SAMPLE_CASES = [
+        { no: '1', cls: '七勇', seat: '31', name: '陳廷安', reason: '陳生於11/3日健教課時毆打林承熹同學，造成林生右手臂紅腫', teacher: '學務處', rule: '10-7', ruleContent: '有毆打同學之事實。', suggestion: '小過乙支' },
+        { no: '2', cls: '七勇', seat: '31', name: '陳廷安', reason: '陳生於連絡簿上謊報成績', teacher: '導師', rule: '10-29', ruleContent: '經查有欺騙之情形。', suggestion: '小過乙支' },
+        { no: '3', cls: '七誠', seat: '44', name: '羅盛熙', reason: '11/4社團課時在同學面前公開辱駡英文科朱珮馨老師「賤貨」。', teacher: '朱珮馨', rule: '10-23', ruleContent: '有言語侵犯他人情節確定。', suggestion: '小過乙支' },
+        { no: '4', cls: '八仁', seat: '25', name: '高翊睿', reason: '10/29童軍課上課時該生未遵守課堂烤棉花糖操作，逕自撕紙打算要在鐵盤上燒被老師發現', teacher: '童軍老師', rule: '10-21', ruleContent: '危及公共安全者。', suggestion: '大過乙支' },
+        { no: '5', cls: '八仁', seat: '30', name: '陳以辰', reason: '10/29童軍課上課時該生未遵守課堂烤棉花糖操作，逕自與同組同學在鐵盤上燒紙被老師發現', teacher: '童軍老師', rule: '10-21', ruleContent: '危及公共安全者。', suggestion: '大過乙支' },
+        { no: '6', cls: '八仁', seat: '43', name: '羅皓宇', reason: '10/29童軍課上課時該生未遵守課堂烤棉花糖操作，逕自撕紙與同組同學在鐵盤上燒被老師發現', teacher: '童軍老師', rule: '10-21', ruleContent: '危及公共安全者。', suggestion: '大過乙支' },
+        { no: '7', cls: '八平', seat: '32', name: '陳瑾宇', reason: '10/30該生連兩天搭乘放學校車時未經同意拍照並將同學照片註記後上傳至個人IG', teacher: '學務處', rule: '10-23', ruleContent: '以言語、文字或於網路各式平台利用文字、影片、圖片侵犯他人名譽或權益時，導致他人身心受傷輕微者。', suggestion: '小過乙支' },
+        { no: '8', cls: '八平', seat: '41', name: '戴允淏', reason: '10/20該生晚練時段複習英文文法時比手畫腳', teacher: '任課老師', rule: '10-14', ruleContent: '不遵守校內行政部門核定之團體規範及學習紀律，進而影響他人學習。', suggestion: '小過乙支' },
+        { no: '9', cls: '九勇', seat: '38', name: '劉祖銓', reason: '10/5劉生在校車上撿到林生的皮夾，劉生拾獲後12天未歸還，10/17劉生去補習班上課時，忘了帶錢包，拿了林生的悠遊卡消費，10/19日放學時告知林生，10/20日將皮包還給林生', teacher: '學務處', rule: '11-10', ruleContent: '竊盜行為，情節嚴重者；或竊盜行為，情節輕微者，經小過處分後仍未經改善者。', suggestion: '大過乙支' },
+        { no: '10', cls: '九正', seat: '39', name: '陳名澤', reason: '11/11日晚輔第二節快下課時，陳生從孝芬樓4樓拍完畢業照片後，陳生回教室下樓速度過快，眼見要撞上前面的同學，伸手推前面同學，造成同學從樓梯跌落導致右腳扭傷及骨折。', teacher: '學務處', rule: '10-26', ruleContent: '雖無惡意，惟因個人行為恐造成他人傷害，情節較輕者（如：抽椅子、三人跳挑戰…等易造成他人受傷之玩笑或行為）', suggestion: '小過乙支' },
+        { no: '11', cls: '七仁', seat: '26', name: '周宥辰', reason: '10/19午餐時間周生爬廁所隔牆偷窺曹同學上廁所', teacher: '學務處', rule: '10-28', ruleContent: '有攀爬廁所隔間之行為，侵犯他人如廁隱私者。', suggestion: '小過乙支' },
+        { no: '12', cls: '七誠', seat: '39', name: '葉祐宇', reason: '葉生用紙條寫七誠同學之個人小考成績及負面批評等八項，拿給校車上其他同學傳閱。', teacher: '導師', rule: '10-23', ruleContent: '以言語侵犯他人，導致他人身心受傷輕微者之事實者。', suggestion: '小過乙支' },
+        { no: '13', cls: '七齊', seat: '38', name: '葉宸愷', reason: '葉生10/20英文小考因為沒有考好，不開心就用力拍打桌面。', teacher: '英文老師', rule: '10-6', ruleContent: '有擾亂上課及影響他人學習之情形。', suggestion: '小過乙支' },
+        { no: '14', cls: '七齊', seat: '38', name: '葉宸愷', reason: '葉生10/30第七節課謊稱要去練拔河擅自離開教室。', teacher: '任課老師', rule: '10-16', ruleContent: '葉生確有上課無故或蓄意未到指定地點上課之行為。', suggestion: '小過乙支' },
+        { no: '15', cls: '七齊', seat: '38', name: '葉宸愷', reason: '葉生於11/3上課時間未報備擅自行離開教室。', teacher: '任課老師', rule: '10-16', ruleContent: '葉生確有上課無故或蓄意未到指定地點上課之行為。', suggestion: '小過乙支' },
+        { no: '16', cls: '七齊', seat: '38', name: '葉宸愷', reason: '葉生於11月3日上課時間不配合課任老師的要求交換改考卷，其行為不當予以懲處。', teacher: '任課老師', rule: '10-15', ruleContent: '葉生確有上課不服從老師指導之行為。', suggestion: '小過乙支' },
+        { no: '17', cls: '七齊', seat: '38', name: '葉宸愷', reason: '葉生於11月6日在上學的校車上拍打學長的頭，其行為不當予以懲處。', teacher: '學務處', rule: '10-26', ruleContent: '其個人行為恐造成他人之傷害。', suggestion: '小過乙支' },
+        { no: '18', cls: '七齊', seat: '38', name: '葉宸愷', reason: '葉生於11/30下課時間對三位同學辱罵"智能障礙"。', teacher: '導師', rule: '10-23', ruleContent: '葉生確有以言語侵犯他人名譽之行為。', suggestion: '小過乙支' },
+        { no: '19', cls: '八信', seat: '20', name: '李翊玄', reason: '10/27李生下課與同學去廁所換衣服因等太久就拉開門縫去看同學', teacher: '學務處', rule: '10-28', ruleContent: '利用攀爬或其他方式窺探廁所隔間，侵犯他人如廁隱私者', suggestion: '小過乙支' },
+        { no: '20', cls: '八信', seat: '38', name: '賴奕睿', reason: '10/27賴生下課與同學去廁所換衣服，因李生等太久就拉開門縫去看該生，賴生心生不悅出來後出手抓傷李生脖子', teacher: '學務處', rule: '10-24', ruleContent: '故意或過失傷害他人身心或造成健康疑慮者或發生肢體衝突有推、撞、打、拍……等動作，未成傷者。', suggestion: '小過乙支' },
+        { no: '21', cls: '八信', seat: '6', name: '張羽樂', reason: '11/10該生在歷史小考時向同學問答案，考試時雙方比手畫腳', teacher: '歷史老師', rule: '10-9', ruleContent: '平時考違反考場各項規範、攜帶非應試需求之各項電子產品入試者。', suggestion: '小過乙支' },
+        { no: '22', cls: '八信', seat: '38', name: '賴奕睿', reason: '11/10該生在歷史小考時向同學問答案，考試時雙方比手畫腳', teacher: '歷史老師', rule: '10-9', ruleContent: '平時考違反考場各項規範、攜帶非應試需求之各項電子產品入試者。', suggestion: '小過乙支' },
+        { no: '23', cls: '八忠', seat: '2', name: '呂襲恩', reason: '10/30該生於英文課小考時使用小抄應答', teacher: '英文老師', rule: '10-9', ruleContent: '平時考違反考場各項規範、攜帶非應試需求之各項電子產品入試者。', suggestion: '小過乙支' },
+        { no: '24', cls: '九信', seat: '17', name: '林泳佑', reason: '10/21上國文課時，林生因手機響起，拿起手機解鎖後，看螢幕是早上搭校車時玩遊戲畫面，便拿起來繼續玩，老師發現後，林生辯稱沒有在玩手機，導師多方查證後，林生才坦承有在玩手機遊戲。', teacher: '導師', rule: '10-18、11-10', ruleContent: '10-18違反學校行動載具使用原則，手機於校內未關機者。\n11-10欺騙師長，情節輕微者', suggestion: '小過乙支' },
+        { no: '25', cls: '九仁', seat: '8', name: '鄭迦諦', reason: '10/19中午，鄭生和翟生相約至道公樓4樓梯間擁抱親嘴，被經過師長發現，師長詢問是哪班的學生，其中翟生謊稱是九愛的學生，鄭生則誠實回答。', teacher: '學務處', rule: '10-19', ruleContent: '針對異性互動中，有下列不當肢體接觸者行為，予以懲誡警惕：\n（一）親吻、擁抱', suggestion: '小過乙支' },
+        { no: '26', cls: '九仁', seat: '42', name: '翟叡', reason: '', teacher: '學務處', rule: '10-19、11-17', ruleContent: '10-19針對異性互動中，有下列不當肢體接觸者行為，予以懲誡警惕：\n（一）親吻、擁抱。\n11-17或欺騙師長、無故不服從師長，情節輕微者或欺騙師長。', suggestion: '小過乙支\n大過乙支' }
+      ];
+
+      // 雲端與跨分頁同步狀態
+      var cloud = {
+        connected: false,
+        appId: typeof window.__app_id !== 'undefined' && window.__app_id ? String(window.__app_id) : 'discipline-committee-app',
+        db: null,
+        auth: null,
+        user: null,
+        unsubMeta: null,
+        unsubBallots: null
+      };
+
+      var broadcastChannel = null;
+      try {
+        if (typeof BroadcastChannel !== 'undefined') {
+          broadcastChannel = new BroadcastChannel('discipline_committee_sync_channel');
+        }
+      } catch (e) {
+        broadcastChannel = null;
+      }
+
+      // 取得 URL ?room= 參數
+      function getInitialRoomCode() {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var roomParam = (params.get('room') || '').trim();
+          if (roomParam) {
+            var cleaned = roomParam.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 32);
+            if (cleaned) return cleaned;
+          }
+        } catch (e) {
+          // 忽略解析錯誤
+        }
+        return '1151118';
+      }
+
+      // 全域應用程式狀態
+      var state = {
+        roomCode: getInitialRoomCode(),
+        meetingTitle: '國中獎懲1151118',
+        meetingDesc: '請依各案懲處事由與獎懲條例審議投票；每案提供「原懲處建議」與「依獎懲會建議（可複選具體處分及補充說明）」兩項主選項。',
+        sourceLabel: '範例資料（115年11月18日獎懲建議表，共26筆）',
+        sheetNames: ['工作表2（範例）'],
+        rawWorkbookRowsBySheet: {},
+        selectedSheet: '工作表2（範例）',
+        cases: [],
+        currentDraft: {
+          editingId: null,
+          role: '',
+          name: '',
+          votes: {}
+        },
+        ballots: []
+      };
+
+      // HTML 跳脫輔助函式
+      function escapeHtml(str) {
+        return String(str === undefined || str === null ? '' : str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      // 案件資料正規化：向下繼承合併儲存格事由、多行懲處建議以頓號合併為單一選項
+      function normalizeCases(rawCases) {
+        var lastReason = '';
+        return rawCases.map(function (item, idx) {
+          var cleanStr = function (v) {
+            return v === undefined || v === null ? '' : String(v).trim();
+          };
+          var no = cleanStr(item.no) || String(idx + 1);
+          var cls = cleanStr(item.cls);
+          var seat = cleanStr(item.seat);
+          var name = cleanStr(item.name);
+          var teacher = cleanStr(item.teacher);
+
+          var reason = cleanStr(item.reason);
+          if (reason) {
+            lastReason = reason;
+          } else if (lastReason) {
+            reason = lastReason;
+          }
+
+          var rule = cleanStr(item.rule);
+          var ruleContent = cleanStr(item.ruleContent);
+          var rawSuggestion = cleanStr(item.suggestion) || '小過乙支';
+
+          // 將同一儲存格內的多行建議合併為單一投票選項（如「小過乙支、大過乙支」）
+          var mergedParts = rawSuggestion
+            .split(/[\r\n]+/)
+            .map(function (s) { return s.trim(); })
+            .filter(function (s) { return s.length > 0 && s !== DEFAULT_COMMITTEE_OPTION; });
+
+          var suggestion = mergedParts.length > 0 ? mergedParts.join('、') : rawSuggestion;
+          var options = [suggestion, DEFAULT_COMMITTEE_OPTION];
+
+          return {
+            id: 'case_' + (idx + 1) + '_' + no,
+            index: idx,
+            no: no,
+            cls: cls,
+            seat: seat,
+            name: name,
+            reason: reason,
+            teacher: teacher,
+            rule: rule,
+            ruleContent: ruleContent,
+            suggestion: suggestion,
+            options: options
+          };
+        });
+      }
+
+      // 取得目前房間在 localStorage 的儲存鍵值
+      function getRoomStorageKey(roomCode) {
+        return STORAGE_KEY_PREFIX + (roomCode || state.roomCode || '1151118');
+      }
+
+      // 儲存至 localStorage 並廣播給同瀏覽器其他分頁
+      function saveLocalStorage(shouldBroadcast) {
+        try {
+          var payload = {
+            roomCode: state.roomCode,
+            meetingTitle: state.meetingTitle,
+            meetingDesc: state.meetingDesc,
+            sourceLabel: state.sourceLabel,
+            cases: state.cases,
+            ballots: state.ballots,
+            updatedAt: Date.now()
+          };
+          localStorage.setItem(getRoomStorageKey(state.roomCode), JSON.stringify(payload));
+          if (shouldBroadcast && broadcastChannel) {
+            broadcastChannel.postMessage({
+              type: 'ROOM_SYNC',
+              roomCode: state.roomCode,
+              payload: payload
+            });
+          }
+        } catch (e) {
+          // 忽略 storage 寫入限制
+        }
+      }
+
+      // 從 localStorage 還原指定房間資料
+      function loadRoomFromLocalStorage(roomCode) {
+        try {
+          var raw = localStorage.getItem(getRoomStorageKey(roomCode));
+          if (!raw) return false;
+          var parsed = JSON.parse(raw);
+          if (!parsed || !Array.isArray(parsed.cases) || parsed.cases.length === 0) return false;
+
+          state.meetingTitle = parsed.meetingTitle || state.meetingTitle;
+          state.meetingDesc = parsed.meetingDesc || state.meetingDesc;
+          state.sourceLabel = parsed.sourceLabel || '已還原的本機資料';
+          state.cases = parsed.cases;
+          state.ballots = Array.isArray(parsed.ballots) ? parsed.ballots : [];
+          return true;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      // 監聽同瀏覽器跨分頁即時同步訊息
+      if (broadcastChannel) {
+        broadcastChannel.onmessage = function (event) {
+          var msg = event && event.data;
+          if (!msg || msg.type !== 'ROOM_SYNC' || msg.roomCode !== state.roomCode) return;
+          var p = msg.payload;
+          if (!p) return;
+          if (p.meetingTitle !== undefined) state.meetingTitle = p.meetingTitle;
+          if (p.meetingDesc !== undefined) state.meetingDesc = p.meetingDesc;
+          if (p.sourceLabel !== undefined) state.sourceLabel = p.sourceLabel;
+          if (Array.isArray(p.cases) && p.cases.length > 0) state.cases = p.cases;
+          if (Array.isArray(p.ballots)) state.ballots = p.ballots;
+          renderAll();
+        };
+      }
+
+      // 監聽 localStorage storage 事件（跨分頁備援）
+      window.addEventListener('storage', function (e) {
+        if (e.key === getRoomStorageKey(state.roomCode) && e.newValue) {
+          if (loadRoomFromLocalStorage(state.roomCode)) {
+            renderAll();
+          }
+        }
+      });
+
+      // Base64 / UTF-8 安全編解碼（供網址參數 ?fb= 夾帶 Firebase 設定）
+      function encodeConfigToUrlParam(obj) {
+        try {
+          var jsonStr = JSON.stringify(obj);
+          var utf8Bytes = new TextEncoder().encode(jsonStr);
+          var binary = '';
+          for (var i = 0; i < utf8Bytes.length; i++) {
+            binary += String.fromCharCode(utf8Bytes[i]);
+          }
+          return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+        } catch (e) {
+          try {
+            return encodeURIComponent(JSON.stringify(obj));
+          } catch (err) {
+            return '';
+          }
+        }
+      }
+
+      function decodeConfigFromUrlParam(encodedStr) {
+        if (!encodedStr) return null;
+        try {
+          var base64 = encodedStr.replace(/-/g, '+').replace(/_/g, '/');
+          while (base64.length % 4 !== 0) {
+            base64 += '=';
+          }
+          var binary = atob(base64);
+          var bytes = new Uint8Array(binary.length);
+          for (var i = 0; i < binary.length; i++) {
+            bytes[i] = binary.charCodeAt(i);
+          }
+          var jsonStr = new TextDecoder().decode(bytes);
+          var parsed = JSON.parse(jsonStr);
+          if (parsed && parsed.apiKey && parsed.projectId) return parsed;
+        } catch (e) {
+          try {
+            var fallbackParsed = JSON.parse(decodeURIComponent(encodedStr));
+            if (fallbackParsed && fallbackParsed.apiKey && fallbackParsed.projectId) return fallbackParsed;
+          } catch (err) {
+            return null;
+          }
+        }
+        return null;
+      }
+
+      // 啟動第一時間自動檢查網址 ?fb= 參數，若有則自動寫入 localStorage 讓委員免設定連線
+      function hydrateFirebaseConfigFromUrl() {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var fbParam = (params.get('fb') || '').trim();
+          if (!fbParam) return false;
+          var parsedCfg = decodeConfigFromUrlParam(fbParam);
+          if (parsedCfg) {
+            localStorage.setItem(CUSTOM_FIREBASE_CFG_KEY, JSON.stringify(parsedCfg));
+            return true;
+          }
+        } catch (e) {
+          // 忽略網址解析異常
+        }
+        return false;
+      }
+
+      // 偵測目前是否處於臨時預覽沙盒環境（無法從外部手機直接開啟）
+      function isPreviewSandboxEnvironment() {
+        try {
+          var proto = (window.location.protocol || '').toLowerCase();
+          var host = (window.location.hostname || '').toLowerCase();
+          var href = (window.location.href || '').toLowerCase();
+
+          if (proto === 'blob:' || proto === 'about:' || proto === 'file:' || proto === 'data:') {
+            return true;
+          }
+          if (!host || host === 'localhost' || host === '127.0.0.1') {
+            return true;
+          }
+          if (
+            host.indexOf('googleusercontent.com') !== -1 ||
+            host.indexOf('scf.usercontent.goog') !== -1 ||
+            host.indexOf('webcontainer') !== -1 ||
+            host.indexOf('stackblitz') !== -1 ||
+            host.indexOf('codesandbox') !== -1 ||
+            href.indexOf('srcdoc') !== -1
+          ) {
+            return true;
+          }
+        } catch (e) {
+          return true;
+        }
+        return false;
+      }
+
+      // 更新連線狀態燈號與提示文字
+      function updateConnectionStatusUI(mode, detailMsg) {
+        var badge = document.getElementById('syncStatusBadge');
+        var dot = document.getElementById('syncStatusDot');
+        var text = document.getElementById('syncStatusText');
+        var detail = document.getElementById('syncDetailText');
+        var footer = document.getElementById('footerStorageHint');
+
+        if (!badge || !dot || !text || !detail) return;
+
+        if (mode === 'cloud') {
+          badge.className = 'inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-900 border border-emerald-200 text-xs font-bold';
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse';
+          text.textContent = '雲端即時同步中（房間：' + state.roomCode + '）';
+          detail.textContent = detailMsg || '所有連線至相同房間碼的委員將即時同步議程與開票結果';
+          if (footer) footer.textContent = '雲端資料庫即時連線中（房間碼：' + state.roomCode + '）';
+        } else if (mode === 'connecting') {
+          badge.className = 'inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold';
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-500 animate-ping';
+          text.textContent = '正在連線至雲端會議室...';
+          detail.textContent = detailMsg || '正在建立雲端同步連線...';
+          if (footer) footer.textContent = '正在建立雲端連線...';
+        } else {
+          badge.className = 'inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-slateBrand-900 border border-blue-200 text-xs font-bold';
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-blue-600';
+          text.textContent = '本機同步模式（房間：' + state.roomCode + '）';
+          detail.textContent = detailMsg || '已啟用本機持久化與同瀏覽器多分頁即時同步；如需跨裝置多人連線，請點右上角「雲端連線設定」';
+          if (footer) footer.textContent = '本機同步模式運作中（房間碼：' + state.roomCode + '），會議結束請匯出 Excel 留存';
+        }
+      }
+
+      // 取得 Firestore 路徑參考（嚴格遵守 artifacts/{appId}/public/data/rooms/{roomId}）
+      function getRoomDocRef(roomCode) {
+        return cloud.db
+          .collection('artifacts')
+          .doc(cloud.appId)
+          .collection('public')
+          .doc('data')
+          .collection('rooms')
+          .doc(roomCode);
+      }
+
+      function getRoomBallotsColRef(roomCode) {
+        return getRoomDocRef(roomCode).collection('ballots');
+      }
+
+      // 將議程資料同步寫入雲端與本機
+      function syncRoomMetaToCloud() {
+        saveLocalStorage(true);
+        if (!cloud.connected || !cloud.db || !cloud.user) return;
+        try {
+          getRoomDocRef(state.roomCode)
+            .set(
+              {
+                meetingTitle: state.meetingTitle,
+                meetingDesc: state.meetingDesc,
+                sourceLabel: state.sourceLabel,
+                cases: state.cases,
+                updatedAt: Date.now()
+              },
+              { merge: true }
+            )
+            .catch(function (err) {
+              console.warn('雲端寫入議程略過：', err);
+            });
+        } catch (err) {
+          console.warn('雲端同步議程異常：', err);
+        }
+      }
+
+      // 訂閱指定會議室的雲端即時更新
+      function subscribeToRoom(roomCode) {
+        if (cloud.unsubMeta) {
+          try { cloud.unsubMeta(); } catch (e) {}
+          cloud.unsubMeta = null;
+        }
+        if (cloud.unsubBallots) {
+          try { cloud.unsubBallots(); } catch (e) {}
+          cloud.unsubBallots = null;
+        }
+
+        state.roomCode = roomCode;
+        var roomInput = document.getElementById('roomCodeInput');
+        if (roomInput) roomInput.value = roomCode;
+
+        if (!cloud.connected || !cloud.db || !cloud.user) {
+          var loaded = loadRoomFromLocalStorage(roomCode);
+          if (!loaded) {
+            state.cases = normalizeCases(SAMPLE_CASES);
+            state.ballots = [];
+            state.sourceLabel = '範例資料（115年11月18日獎懲建議表，共26筆）';
+          }
+          updateConnectionStatusUI('local');
+          renderAll();
+          return;
+        }
+
+        updateConnectionStatusUI('connecting', '正在加入雲端房間「' + roomCode + '」...');
+
+        try {
+          cloud.unsubMeta = getRoomDocRef(roomCode).onSnapshot(
+            function (snap) {
+              updateConnectionStatusUI('cloud');
+              if (snap.exists) {
+                var data = snap.data() || {};
+                if (data.meetingTitle !== undefined) state.meetingTitle = data.meetingTitle;
+                if (data.meetingDesc !== undefined) state.meetingDesc = data.meetingDesc;
+                if (data.sourceLabel !== undefined) state.sourceLabel = data.sourceLabel;
+                if (Array.isArray(data.cases) && data.cases.length > 0) {
+                  state.cases = data.cases;
+                }
+                saveLocalStorage(false);
+                renderAll();
+              } else {
+                if (!state.cases || state.cases.length === 0) {
+                  state.cases = normalizeCases(SAMPLE_CASES);
+                  state.sourceLabel = '範例資料（115年11月18日獎懲建議表，共26筆）';
+                }
+                syncRoomMetaToCloud();
+                renderAll();
+              }
+            },
+            function (error) {
+              console.warn('Firestore 議程監聽降級：', error);
+              cloud.connected = false;
+              updateConnectionStatusUI('local', '雲端連線權限受限，已自動切換為本機同步模式');
+            }
+          );
+
+          cloud.unsubBallots = getRoomBallotsColRef(roomCode).onSnapshot(
+            function (querySnap) {
+              var list = [];
+              querySnap.forEach(function (docSnap) {
+                var d = docSnap.data() || {};
+                d.id = docSnap.id;
+                list.push(d);
+              });
+              list.sort(function (a, b) {
+                return (a.submittedTs || 0) - (b.submittedTs || 0);
+              });
+              state.ballots = list;
+              saveLocalStorage(false);
+              renderStatisticsPanel();
+              updateTopStats();
+            },
+            function (error) {
+              console.warn('Firestore 票單監聽降級：', error);
+            }
+          );
+        } catch (err) {
+          cloud.connected = false;
+          updateConnectionStatusUI('local');
+        }
+      }
+
+      // 取得 Firebase 設定（優先讀取環境變數，其次讀取本機自訂設定）
+      function resolveFirebaseConfig() {
+        try {
+          if (typeof window.__firebase_config !== 'undefined' && window.__firebase_config) {
+            var cfg = typeof window.__firebase_config === 'string'
+              ? JSON.parse(window.__firebase_config)
+              : window.__firebase_config;
+            if (cfg && cfg.apiKey && cfg.projectId) return cfg;
+          }
+        } catch (e) {
+          // 忽略環境變數解析錯誤
+        }
+        try {
+          var customRaw = localStorage.getItem(CUSTOM_FIREBASE_CFG_KEY);
+          if (customRaw) {
+            var parsed = JSON.parse(customRaw);
+            if (parsed && parsed.apiKey && parsed.projectId) return parsed;
+          }
+        } catch (e) {
+          // 忽略自訂設定解析錯誤
+        }
+        return null;
+      }
+
+      // 初始化 Firebase 雲端連線（失敗時優雅降級為本機同步模式）
+      function initCloudConnection() {
+        var cfg = resolveFirebaseConfig();
+        if (!cfg || typeof window.firebase === 'undefined') {
+          cloud.connected = false;
+          updateConnectionStatusUI('local');
+          return;
+        }
+
+        try {
+          updateConnectionStatusUI('connecting', '正在連線至雲端資料庫...');
+          var appInstance = window.firebase.apps && window.firebase.apps.length > 0
+            ? window.firebase.app()
+            : window.firebase.initializeApp(cfg);
+
+          cloud.auth = window.firebase.auth(appInstance);
+          cloud.db = window.firebase.firestore(appInstance);
+
+          var authPromise = (typeof window.__initial_auth_token !== 'undefined' && window.__initial_auth_token)
+            ? cloud.auth.signInWithCustomToken(window.__initial_auth_token)
+            : cloud.auth.signInAnonymously();
+
+          authPromise
+            .then(function (cred) {
+              cloud.user = (cred && cred.user) || cloud.auth.currentUser;
+              if (!cloud.user) throw new Error('未取得匿名驗證使用者');
+              cloud.connected = true;
+              subscribeToRoom(state.roomCode);
+            })
+            .catch(function (err) {
+              console.warn('Firebase 驗證失敗，降級至本機模式：', err);
+              cloud.connected = false;
+              updateConnectionStatusUI('local', '雲端驗證未啟用（' + (err.code || '離線') + '），已切換為本機同步模式');
+            });
+        } catch (err) {
+          console.warn('Firebase 初始化異常，降級至本機模式：', err);
+          cloud.connected = false;
+          updateConnectionStatusUI('local');
+        }
+      }
+
+      // 顯示與隱藏系統通知橫幅（取代 alert）
+      window.showToast = function (message, type) {
+        var container = document.getElementById('toastContainer');
+        var box = document.getElementById('toastBox');
+        var icon = document.getElementById('toastIcon');
+        var msgEl = document.getElementById('toastMessage');
+        if (!container || !box || !icon || !msgEl) return;
+
+        container.classList.remove('hidden');
+        box.className = 'flex items-start justify-between gap-3 px-4 py-3 rounded-xl border text-sm font-medium shadow-sm transition';
+        if (type === 'success') {
+          box.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-900');
+          icon.textContent = '✅';
+        } else if (type === 'error') {
+          box.classList.add('bg-red-50', 'border-red-200', 'text-red-900');
+          icon.textContent = '⚠️';
+        } else {
+          box.classList.add('bg-slateBrand-50', 'border-slateBrand-700/20', 'text-slateBrand-900');
+          icon.textContent = 'ℹ️';
+        }
+        msgEl.textContent = message;
+      };
+
+      window.hideToast = function () {
+        var container = document.getElementById('toastContainer');
+        if (container) container.classList.add('hidden');
+      };
+
+      // 自訂確認視窗（取代 confirm）
+      var confirmResolver = null;
+      function openConfirmModal(title, message) {
+        return new Promise(function (resolve) {
+          confirmResolver = resolve;
+          var modal = document.getElementById('confirmModal');
+          var tEl = document.getElementById('confirmModalTitle');
+          var mEl = document.getElementById('confirmModalMessage');
+          if (tEl) tEl.textContent = title;
+          if (mEl) mEl.textContent = message;
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+          } else {
+            resolve(true);
+          }
+        });
+      }
+
+      window.closeConfirmModal = function (result) {
+        var modal = document.getElementById('confirmModal');
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+        if (confirmResolver) {
+          confirmResolver(result);
+          confirmResolver = null;
+        }
+      };
+
+      // 雲端設定 Modal 操作
+      window.openCloudConfigModal = function () {
+        var modal = document.getElementById('cloudConfigModal');
+        var ta = document.getElementById('firebaseConfigTextarea');
+        if (ta) ta.value = localStorage.getItem(CUSTOM_FIREBASE_CFG_KEY) || '';
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+      };
+
+      window.closeCloudConfigModal = function () {
+        var modal = document.getElementById('cloudConfigModal');
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      };
+
+      window.saveAndConnectFirebaseConfig = function () {
+        var ta = document.getElementById('firebaseConfigTextarea');
+        var raw = ta ? ta.value.trim() : '';
+        if (!raw) {
+          window.showToast('請先貼上 Firebase Config JSON 設定內容。', 'error');
+          return;
+        }
+        try {
+          var parsed = JSON.parse(raw);
+          if (!parsed.apiKey || !parsed.projectId) {
+            window.showToast('設定缺少 apiKey 或 projectId，請確認 JSON 內容後再試。', 'error');
+            return;
+          }
+          localStorage.setItem(CUSTOM_FIREBASE_CFG_KEY, JSON.stringify(parsed));
+          window.closeCloudConfigModal();
+          initCloudConnection();
+          window.showToast('已儲存自訂 Firebase 設定並嘗試連線！', 'success');
+        } catch (err) {
+          window.showToast('JSON 格式解析錯誤：' + err.message, 'error');
+        }
+      };
+
+      window.clearFirebaseConfig = function () {
+        localStorage.removeItem(CUSTOM_FIREBASE_CFG_KEY);
+        var ta = document.getElementById('firebaseConfigTextarea');
+        if (ta) ta.value = '';
+        window.closeCloudConfigModal();
+        cloud.connected = false;
+        subscribeToRoom(state.roomCode);
+        window.showToast('已清除自訂雲端設定，切換回本機同步模式。', 'info');
+      };
+
+      // 切換會議室房間碼
+      window.handleSwitchRoom = function () {
+        var input = document.getElementById('roomCodeInput');
+        var rawRoom = input ? input.value.trim().replace(/[^a-zA-Z0-9_-]/g, '') : '';
+        if (!rawRoom) {
+          window.showToast('請輸入有效的英數字會議室房間碼（例如：1151118）。', 'error');
+          return;
+        }
+        state.currentDraft = {
+          editingId: null,
+          role: state.currentDraft.role,
+          name: state.currentDraft.name,
+          votes: {}
+        };
+        subscribeToRoom(rawRoom);
+        window.showToast('已切換至會議室「' + rawRoom + '」。', 'success');
+      };
+
+      // 部署引導視窗控制與一鍵下載完整 index.html
+      window.openDeployGuideModal = function () {
+        var modal = document.getElementById('deployGuideModal');
+        var hostLabel = document.getElementById('previewHostLabel');
+        if (hostLabel) {
+          var displayHost = window.location.hostname || window.location.protocol || '預覽沙盒視窗';
+          hostLabel.textContent = displayHost;
+        }
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+      };
+
+      window.closeDeployGuideModal = function () {
+        var modal = document.getElementById('deployGuideModal');
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      };
+
+      window.downloadAppHtmlFile = function () {
+        try {
+          var fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+          var blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = 'index.html';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setTimeout(function () {
+            URL.revokeObjectURL(url);
+          }, 1500);
+          window.showToast('已開始下載完整「index.html」檔案！您可直接拖曳至 Netlify Drop 或上傳 GitHub Pages 取得正式網址。', 'success');
+        } catch (err) {
+          window.showToast('下載 HTML 檔案失敗：' + (err.message || '未知錯誤'), 'error');
+        }
+      };
+
+      // 複製委員投票專屬連結（自動編碼 Firebase 設定至 ?room=...&fb=...，並偵測預覽沙盒彈出部署引導）
+      window.copyInviteLink = function (fromCloudModal) {
+        var input = document.getElementById('roomCodeInput');
+        var cleanRoom = (input && input.value.trim()) || state.roomCode || '1151118';
+        var activeFbConfig = resolveFirebaseConfig();
+        var encodedFb = activeFbConfig ? encodeConfigToUrlParam(activeFbConfig) : '';
+
+        var shareUrl = window.location.href;
+        try {
+          var urlObj = new URL(window.location.href);
+          urlObj.searchParams.set('room', cleanRoom);
+          if (encodedFb) {
+            urlObj.searchParams.set('fb', encodedFb);
+          }
+          shareUrl = urlObj.toString();
+        } catch (e) {
+          var base = window.location.href.split('?')[0];
+          shareUrl = base + '?room=' + encodeURIComponent(cleanRoom) + (encodedFb ? '&fb=' + encodeURIComponent(encodedFb) : '');
+        }
+
+        var tempInput = document.createElement('textarea');
+        tempInput.value = shareUrl;
+        tempInput.style.position = 'fixed';
+        tempInput.style.left = '-9999px';
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+          document.execCommand('copy');
+        } catch (e) {
+          // 忽略複製限制
+        } finally {
+          document.body.removeChild(tempInput);
+        }
+
+        if (isPreviewSandboxEnvironment()) {
+          if (fromCloudModal) {
+            window.closeCloudConfigModal();
+          }
+          window.openDeployGuideModal();
+          window.showToast(
+            '已複製目前網址，但偵測到您正在「預覽沙盒視窗」中，外部手機無法開啟此臨時網址；請依視窗步驟下載 index.html 部署至正式網址後再分享！',
+            'info'
+          );
+          return;
+        }
+
+        if (encodedFb) {
+          window.showToast(
+            '已複製會議室「' + cleanRoom + '」免設定雲端投票連結（已自動夾帶 Firebase 設定，委員手機點開即自動連線投票）！',
+            'success'
+          );
+        } else {
+          window.showToast(
+            '已複製會議室「' + cleanRoom + '」投票連結！提醒：目前尚未設定 Firebase 雲端資料庫，若需跨手機即時同步請先點選「雲端連線設定」。',
+            'info'
+          );
+        }
+      };
+
+      // 自動辨識 Excel 欄位標題並解析案件
+      function parseRowsToCases(rows) {
+        if (!Array.isArray(rows) || rows.length === 0) return [];
+
+        var headerRowIndex = -1;
+        var colMap = {
+          no: -1,
+          cls: -1,
+          seat: -1,
+          name: -1,
+          reason: -1,
+          teacher: -1,
+          rule: -1,
+          ruleContent: -1,
+          suggestion: -1
+        };
+
+        for (var r = 0; r < Math.min(rows.length, 15); r++) {
+          var row = rows[r] || [];
+          var normalizedCells = row.map(function (c) {
+            return String(c === undefined || c === null ? '' : c).replace(/\s+/g, '').trim();
+          });
+          var hasClass = normalizedCells.some(function (c) { return c.indexOf('班級') !== -1; });
+          var hasName = normalizedCells.some(function (c) { return c.indexOf('姓名') !== -1; });
+          var hasReason = normalizedCells.some(function (c) { return c.indexOf('懲處事由') !== -1 || c.indexOf('事由') !== -1; });
+
+          if (hasClass || (hasName && hasReason)) {
+            headerRowIndex = r;
+            normalizedCells.forEach(function (cell, cIdx) {
+              if (colMap.no === -1 && (cell === '編號' || cell.indexOf('編號') !== -1)) colMap.no = cIdx;
+              else if (colMap.cls === -1 && cell.indexOf('班級') !== -1) colMap.cls = cIdx;
+              else if (colMap.seat === -1 && (cell.indexOf('座號') !== -1 || cell === '號')) colMap.seat = cIdx;
+              else if (colMap.name === -1 && cell.indexOf('姓名') !== -1) colMap.name = cIdx;
+              else if (colMap.reason === -1 && (cell.indexOf('懲處事由') !== -1 || cell.indexOf('事由') !== -1)) colMap.reason = cIdx;
+              else if (colMap.teacher === -1 && (cell.indexOf('簽請師長') !== -1 || cell.indexOf('師長') !== -1)) colMap.teacher = cIdx;
+              else if (colMap.rule === -1 && cell.indexOf('獎懲條例') !== -1) colMap.rule = cIdx;
+              else if (colMap.ruleContent === -1 && (cell.indexOf('條例內容') !== -1 || cell.indexOf('法條內容') !== -1 || cell.indexOf('內容') !== -1)) colMap.ruleContent = cIdx;
+              else if (colMap.suggestion === -1 && (cell.indexOf('懲處建議') !== -1 || cell.indexOf('建議') !== -1)) colMap.suggestion = cIdx;
+            });
+            break;
+          }
+        }
+
+        var startRow = headerRowIndex >= 0 ? headerRowIndex + 1 : 0;
+        var parsed = [];
+
+        for (var r2 = startRow; r2 < rows.length; r2++) {
+          var row2 = rows[r2];
+          if (!Array.isArray(row2) || row2.every(function (cell) { return cell === undefined || cell === null || String(cell).trim() === ''; })) {
+            continue;
+          }
+
+          var getVal = function (mappedIdx, fallbackIdx) {
+            var idx = mappedIdx >= 0 ? mappedIdx : fallbackIdx;
+            return idx >= 0 && idx < row2.length ? row2[idx] : '';
+          };
+
+          var no = getVal(colMap.no, 0);
+          var cls = getVal(colMap.cls, 1);
+          var seat = getVal(colMap.seat, 2);
+          var name = getVal(colMap.name, 3);
+          var reason = getVal(colMap.reason, 4);
+          var teacher = getVal(colMap.teacher, 5);
+          var rule = getVal(colMap.rule, colMap.rule >= 0 ? colMap.rule : 6);
+          var ruleContent = getVal(colMap.ruleContent, colMap.ruleContent >= 0 ? colMap.ruleContent : 7);
+          var suggestion = getVal(colMap.suggestion, colMap.suggestion >= 0 ? colMap.suggestion : 8);
+
+          var cleanNo = String(no || '').trim();
+          var cleanCls = String(cls || '').trim();
+          var cleanName = String(name || '').trim();
+          if (!cleanCls && !cleanName && !/^\d+$/.test(cleanNo)) {
+            continue;
+          }
+
+          parsed.push({
+            no: no,
+            cls: cls,
+            seat: seat,
+            name: name,
+            reason: reason,
+            teacher: teacher,
+            rule: rule,
+            ruleContent: ruleContent,
+            suggestion: suggestion
+          });
+        }
+
+        return normalizeCases(parsed);
+      }
+
+      // 處理 Excel 檔案上傳
+      window.handleExcelFileUpload = function (event) {
+        var file = event.target && event.target.files && event.target.files[0];
+        if (!file) return;
+
+        if (typeof window.XLSX === 'undefined') {
+          window.showToast('Excel 解析元件（SheetJS）尚未載入完成，請稍後再試。', 'error');
+          return;
+        }
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          try {
+            var data = new Uint8Array(e.target.result);
+            var workbook = window.XLSX.read(data, { type: 'array' });
+            if (!workbook.SheetNames || workbook.SheetNames.length === 0) {
+              window.showToast('此檔案中找不到任何工作表。', 'error');
+              return;
+            }
+
+            state.sheetNames = workbook.SheetNames;
+            state.rawWorkbookRowsBySheet = {};
+
+            workbook.SheetNames.forEach(function (sName) {
+              var ws = workbook.Sheets[sName];
+              state.rawWorkbookRowsBySheet[sName] = window.XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+            });
+
+            var chosenSheet = workbook.SheetNames[0];
+            for (var i = 0; i < workbook.SheetNames.length; i++) {
+              var sName = workbook.SheetNames[i];
+              var candidate = parseRowsToCases(state.rawWorkbookRowsBySheet[sName]);
+              if (candidate.length > 0) {
+                chosenSheet = sName;
+                if (sName.indexOf('2') !== -1) break;
+              }
+            }
+
+            state.selectedSheet = chosenSheet;
+            state.sourceLabel = file.name + '（' + chosenSheet + '）';
+            state.cases = parseRowsToCases(state.rawWorkbookRowsBySheet[chosenSheet]);
+            state.currentDraft = {
+              editingId: null,
+              role: state.currentDraft.role,
+              name: state.currentDraft.name,
+              votes: {}
+            };
+
+            renderSheetSelector();
+            renderAll();
+            syncRoomMetaToCloud();
+
+            if (state.cases.length > 0) {
+              window.showToast(
+                '已成功匯入「' + file.name + '」工作表「' + chosenSheet + '」（共 ' + state.cases.length + ' 筆案件）並同步更新！',
+                'success'
+              );
+            } else {
+              window.showToast('已讀取「' + file.name + '」，但於「' + chosenSheet + '」未辨識到有效案件列，請嘗試切換其他工作表。', 'error');
+            }
+          } catch (err) {
+            window.showToast('無法解析 Excel 檔案：' + (err.message || '格式不支援'), 'error');
+          } finally {
+            event.target.value = '';
+          }
+        };
+        reader.onerror = function () {
+          window.showToast('讀取檔案時發生錯誤，請重新選擇檔案。', 'error');
+        };
+        reader.readAsArrayBuffer(file);
+      };
+
+      // 切換工作表
+      window.handleSheetChange = function (event) {
+        var sheetName = event.target.value;
+        if (!sheetName || !state.rawWorkbookRowsBySheet[sheetName]) return;
+
+        state.selectedSheet = sheetName;
+        var fileBase = state.sourceLabel.split('（')[0] || '已匯入檔案';
+        state.sourceLabel = fileBase + '（' + sheetName + '）';
+        state.cases = parseRowsToCases(state.rawWorkbookRowsBySheet[sheetName]);
+        state.currentDraft = {
+          editingId: null,
+          role: state.currentDraft.role,
+          name: state.currentDraft.name,
+          votes: {}
+        };
+
+        renderAll();
+        syncRoomMetaToCloud();
+        window.showToast('已切換至工作表「' + sheetName + '」，共 ' + state.cases.length + ' 筆案件。', 'info');
+      };
+
+      // 下載範例 Excel
+      window.downloadSampleExcel = function () {
+        if (typeof window.XLSX === 'undefined') {
+          window.showToast('Excel 元件尚未載入完成，請稍後再試。', 'error');
+          return;
+        }
+        try {
+          var wb = window.XLSX.utils.book_new();
+          var sampleRows = SAMPLE_CASES.map(function (item) {
+            return {
+              '編號': item.no,
+              '班級': item.cls,
+              '座號': item.seat,
+              '姓名': item.name,
+              '懲處事由': item.reason,
+              '簽請師長': item.teacher || '',
+              '獎懲條例': item.rule,
+              '條例內容': item.ruleContent,
+              '懲處建議': item.suggestion
+            };
+          });
+          var ws = window.XLSX.utils.json_to_sheet(sampleRows);
+          window.XLSX.utils.book_append_sheet(wb, ws, '工作表2');
+          window.XLSX.writeFile(wb, '範例_115年11月18日學生獎懲建議表.xlsx');
+          window.showToast('已下載「範例_115年11月18日學生獎懲建議表.xlsx」，可用於測試匯入功能。', 'success');
+        } catch (err) {
+          window.showToast('下載範例 Excel 失敗：' + (err.message || '未知錯誤'), 'error');
+        }
+      };
+
+      // 載入內建 26 筆範例資料
+      window.loadSampleData = function () {
+        state.sheetNames = ['工作表2（範例）'];
+        state.selectedSheet = '工作表2（範例）';
+        state.sourceLabel = '範例資料（115年11月18日獎懲建議表，共26筆）';
+        state.cases = normalizeCases(SAMPLE_CASES);
+        state.currentDraft = {
+          editingId: null,
+          role: state.currentDraft.role,
+          name: state.currentDraft.name,
+          votes: {}
+        };
+
+        renderSheetSelector();
+        renderAll();
+        syncRoomMetaToCloud();
+        window.showToast('已載入內建 ' + state.cases.length + ' 筆範例資料並完成同步。', 'success');
+      };
+
+      // 渲染工作表下拉選單
+      function renderSheetSelector() {
+        var select = document.getElementById('sheetSelect');
+        if (!select) return;
+        if (!state.sheetNames || state.sheetNames.length === 0) {
+          select.disabled = true;
+          select.innerHTML = '<option value="">無多工作表可選</option>';
+          return;
+        }
+        select.disabled = state.sheetNames.length <= 1 && Object.keys(state.rawWorkbookRowsBySheet).length === 0;
+        select.innerHTML = state.sheetNames
+          .map(function (s) {
+            return '<option value="' + escapeHtml(s) + '" ' + (s === state.selectedSheet ? 'selected' : '') + '>' + escapeHtml(s) + '</option>';
+          })
+          .join('');
+      }
+
+      // 取得單案投票完整文字標籤
+      function resolveVoteLabel(caseItem, voteObj) {
+        if (!voteObj || !voteObj.choice) return '';
+        if (voteObj.choice === DEFAULT_COMMITTEE_OPTION) {
+          var subs = Array.isArray(voteObj.subChoices) ? voteObj.subChoices.filter(Boolean) : [];
+          var note = (voteObj.otherText || '').trim();
+          var details = [];
+          if (subs.length > 0) details.push(subs.join('、'));
+          if (note) details.push('補充：' + note);
+          return details.length > 0
+            ? DEFAULT_COMMITTEE_OPTION + '（' + details.join('；') + '）'
+            : DEFAULT_COMMITTEE_OPTION + '（未指定具體處分）';
+        }
+        return voteObj.choice;
+      }
+
+      // 更新頂部統計卡片與進度條
+      function updateTopStats() {
+        var totalCases = state.cases.length;
+        var totalBallots = state.ballots.length;
+
+        var casesCountEl = document.getElementById('statCasesCount');
+        var sourceLabelEl = document.getElementById('statSourceLabel');
+        var ballotsCountEl = document.getElementById('statBallotsCount');
+        var tabBadgeEl = document.getElementById('tabBallotBadge');
+        var rolesSummaryEl = document.getElementById('statRolesSummary');
+        var progressEl = document.getElementById('statCurrentProgress');
+        var progressBarEl = document.getElementById('statCurrentProgressBar');
+
+        if (casesCountEl) casesCountEl.innerHTML = totalCases + ' <span class="text-sm font-normal text-gray-500">案</span>';
+        if (sourceLabelEl) sourceLabelEl.textContent = state.sourceLabel || '尚未載入資料';
+        if (ballotsCountEl) ballotsCountEl.innerHTML = totalBallots + ' <span class="text-sm font-normal text-gray-500">位委員</span>';
+        if (tabBadgeEl) tabBadgeEl.textContent = String(totalBallots);
+
+        var roleCounts = { '行政代表': 0, '教師代表': 0, '家長代表': 0, '學生代表': 0 };
+        state.ballots.forEach(function (b) {
+          if (roleCounts[b.role] !== undefined) roleCounts[b.role] += 1;
+        });
+        if (rolesSummaryEl) {
+          rolesSummaryEl.textContent =
+            '行政 ' + roleCounts['行政代表'] +
+            ' / 教師 ' + roleCounts['教師代表'] +
+            ' / 家長 ' + roleCounts['家長代表'] +
+            ' / 學生 ' + roleCounts['學生代表'];
+        }
+
+        var answeredCount = 0;
+        state.cases.forEach(function (c) {
+          var v = state.currentDraft.votes[c.id];
+          if (v && v.choice) answeredCount += 1;
+        });
+
+        var pct = totalCases > 0 ? Math.round((answeredCount / totalCases) * 100) : 0;
+        if (progressEl) progressEl.innerHTML = answeredCount + ' / ' + totalCases + ' <span class="text-sm font-normal text-gray-500">題</span>';
+        if (progressBarEl) progressBarEl.style.width = pct + '%';
+      }
+
+      // 委員基本資料事件
+      window.handleRoleChange = function (roleVal) {
+        state.currentDraft.role = roleVal;
+      };
+
+      window.handleMemberNameInput = function (nameVal) {
+        state.currentDraft.name = nameVal;
+      };
+
+      // 渲染委員基本資料標頭狀態
+      function renderDraftHeader() {
+        var roleGroup = document.getElementById('memberRoleGroup');
+        if (roleGroup) {
+          var radios = roleGroup.querySelectorAll('input[name="memberRole"]');
+          radios.forEach(function (r) {
+            r.checked = r.value === state.currentDraft.role;
+          });
+        }
+
+        var nameInput = document.getElementById('memberNameInput');
+        if (nameInput) nameInput.value = state.currentDraft.name || '';
+
+        var editBadge = document.getElementById('editingModeBadge');
+        var submitText = document.getElementById('submitVoteBtnText');
+        if (state.currentDraft.editingId) {
+          if (editBadge) {
+            editBadge.classList.remove('hidden');
+            editBadge.classList.add('inline-flex');
+          }
+          if (submitText) submitText.textContent = '儲存更新此委員票單';
+        } else {
+          if (editBadge) {
+            editBadge.classList.add('hidden');
+            editBadge.classList.remove('inline-flex');
+          }
+          if (submitText) submitText.textContent = '送出本委員投票並新增下一位';
+        }
+      }
+
+      // 單案主選項變更處理
+      window.handleMainChoiceChange = function (caseId, choice) {
+        var prev = state.currentDraft.votes[caseId] || { choice: '', subChoices: [], otherText: '' };
+        if (choice === DEFAULT_COMMITTEE_OPTION) {
+          state.currentDraft.votes[caseId] = {
+            choice: DEFAULT_COMMITTEE_OPTION,
+            subChoices: Array.isArray(prev.subChoices) ? prev.subChoices : [],
+            otherText: prev.otherText || ''
+          };
+        } else {
+          // 改選回原懲處建議時，自動清除 7 項複選並收合補充說明區
+          state.currentDraft.votes[caseId] = {
+            choice: choice,
+            subChoices: [],
+            otherText: ''
+          };
+        }
+        renderCasesList();
+        updateTopStats();
+      };
+
+      // 單案 7 項具體處分複選框變更處理（勾選任一項自動聯動選取「依獎懲會建議」）
+      window.handleSubChoiceToggle = function (caseId, subVal, isChecked) {
+        var prev = state.currentDraft.votes[caseId] || { choice: DEFAULT_COMMITTEE_OPTION, subChoices: [], otherText: '' };
+        var setObj = {};
+        if (Array.isArray(prev.subChoices)) {
+          prev.subChoices.forEach(function (s) { setObj[s] = true; });
+        }
+        if (isChecked) {
+          setObj[subVal] = true;
+        } else {
+          delete setObj[subVal];
+        }
+        var orderedSubs = COMMITTEE_SUB_OPTIONS.filter(function (opt) { return !!setObj[opt]; });
+
+        state.currentDraft.votes[caseId] = {
+          choice: DEFAULT_COMMITTEE_OPTION,
+          subChoices: orderedSubs,
+          otherText: prev.otherText || ''
+        };
+        renderCasesList();
+        updateTopStats();
+      };
+
+      // 單案補充說明輸入處理
+      window.handleOtherNoteInput = function (caseId, val) {
+        var prev = state.currentDraft.votes[caseId] || { choice: DEFAULT_COMMITTEE_OPTION, subChoices: [], otherText: '' };
+        state.currentDraft.votes[caseId] = {
+          choice: DEFAULT_COMMITTEE_OPTION,
+          subChoices: Array.isArray(prev.subChoices) ? prev.subChoices : [],
+          otherText: val
+        };
+      };
+
+      // 渲染案件投票卡片列表
+      function renderCasesList() {
+        var container = document.getElementById('casesContainer');
+        if (!container) return;
+
+        if (!state.cases || state.cases.length === 0) {
+          container.innerHTML =
+            '<div class="bg-white rounded-2xl border border-dashed border-gray-300 p-10 text-center space-y-3">' +
+            '<h3 class="text-base font-bold text-gray-800">目前尚無獎懲案件資料</h3>' +
+            '<p class="text-sm text-gray-500 max-w-md mx-auto">請點擊上方「匯入 Excel」上傳您的獎懲建議表，或點擊下方按鈕載入內建 26 筆範例資料。</p>' +
+            '<div class="pt-2">' +
+            '<button type="button" onclick="window.loadSampleData()" class="px-4 py-2 rounded-xl bg-slateBrand-800 hover:bg-slateBrand-700 text-white text-sm font-semibold transition">載入預設 26 筆範例案件</button>' +
+            '</div></div>';
+          return;
+        }
+
+        container.innerHTML = state.cases
+          .map(function (c) {
+            var currentVote = state.currentDraft.votes[c.id] || { choice: '', subChoices: [], otherText: '' };
+            var isDefaultSelected = currentVote.choice === DEFAULT_COMMITTEE_OPTION;
+            var selectedSubs = Array.isArray(currentVote.subChoices) ? currentVote.subChoices : [];
+
+            var optionButtonsHtml = c.options
+              .map(function (opt) {
+                var checked = currentVote.choice === opt;
+                var isDefaultSug = opt === DEFAULT_COMMITTEE_OPTION;
+                var labelCls = checked
+                  ? isDefaultSug
+                    ? 'border-slateBrand-800 bg-slateBrand-50 ring-1 ring-slateBrand-800'
+                    : 'border-amber-600 bg-amber-50/70 ring-1 ring-amber-600'
+                  : 'border-gray-200 hover:border-slateBrand-700/50 hover:bg-gray-50';
+                var badgeHtml = isDefaultSug
+                  ? '<span class="ml-1.5 text-xs text-slateBrand-700 bg-slateBrand-100 px-2 py-0.5 rounded-full font-medium">展開 7 項具體處分複選</span>'
+                  : '<span class="ml-1.5 text-xs text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full font-medium">同意原懲處建議</span>';
+
+                return (
+                  '<label class="flex items-start gap-3 p-3.5 rounded-xl border cursor-pointer transition ' + labelCls + '">' +
+                  '<input type="radio" name="vote_' + escapeHtml(c.id) + '" value="' + escapeHtml(opt) + '" ' +
+                  (checked ? 'checked' : '') +
+                  ' onchange="window.handleMainChoiceChange(\'' + escapeHtml(c.id) + '\', this.value)" class="mt-0.5 w-4 h-4 text-slateBrand-800 focus:ring-slateBrand-700" />' +
+                  '<div class="flex-1 text-sm"><span class="font-bold text-gray-900">' + escapeHtml(opt) + '</span>' + badgeHtml + '</div>' +
+                  '</label>'
+                );
+              })
+              .join('');
+
+            var subCheckboxesHtml = COMMITTEE_SUB_OPTIONS.map(function (subOpt) {
+              var subChecked = selectedSubs.indexOf(subOpt) !== -1;
+              var subCls = subChecked
+                ? 'border-slateBrand-800 bg-slateBrand-800 text-white font-bold shadow-xs'
+                : 'border-slateBrand-200 bg-white text-gray-800 hover:border-slateBrand-600 hover:bg-slateBrand-50/60 font-medium';
+              return (
+                '<label class="flex items-center gap-2 px-3 py-2 rounded-lg border text-xs sm:text-sm cursor-pointer transition select-none ' + subCls + '">' +
+                '<input type="checkbox" value="' + escapeHtml(subOpt) + '" ' +
+                (subChecked ? 'checked' : '') +
+                ' onchange="window.handleSubChoiceToggle(\'' + escapeHtml(c.id) + '\', \'' + escapeHtml(subOpt) + '\', this.checked)" class="w-4 h-4 rounded text-slateBrand-700 focus:ring-slateBrand-500" />' +
+                '<span>' + escapeHtml(subOpt) + '</span>' +
+                '</label>'
+              );
+            }).join('');
+
+            var selectedBadgeHtml =
+              isDefaultSelected && selectedSubs.length > 0
+                ? '<span class="text-xs font-bold text-slateBrand-800 bg-white px-2.5 py-0.5 rounded-full border border-slateBrand-200">已選 ' +
+                  selectedSubs.length +
+                  ' 項：' +
+                  escapeHtml(selectedSubs.join('、')) +
+                  '</span>'
+                : '';
+
+            var otherNoteHtml = isDefaultSelected
+              ? '<div class="pt-1">' +
+                '<label class="block text-xs font-semibold text-gray-600 mb-1">其他建議 / 補充說明（選填）</label>' +
+                '<input type="text" value="' + escapeHtml(currentVote.otherText || '') + '" oninput="window.handleOtherNoteInput(\'' + escapeHtml(c.id) + '\', this.value)" placeholder="若需補充其他處分建議或輔導觀察說明，請在此輸入（選填）" class="w-full px-3.5 py-2 rounded-xl border border-slateBrand-300 bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-slateBrand-700/30" />' +
+                '</div>'
+              : '';
+
+            var detailBoxCls = isDefaultSelected
+              ? 'border-slateBrand-700/40 bg-slateBrand-50/70 shadow-inner'
+              : 'border-dashed border-gray-200 bg-gray-50/50 opacity-85 hover:opacity-100';
+
+            return (
+              '<article class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">' +
+              '<div class="p-5 sm:p-6 space-y-4">' +
+              '<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-3 border-b border-gray-100">' +
+              '<div class="flex flex-wrap items-center gap-2">' +
+              '<span class="inline-flex items-center justify-center px-2.5 py-1 rounded-lg bg-slateBrand-900 text-white text-xs font-bold">編號 ' + escapeHtml(c.no) + '</span>' +
+              (c.cls ? '<span class="px-2.5 py-1 rounded-lg bg-slateBrand-50 text-slateBrand-900 border border-slateBrand-700/20 text-xs font-bold">' + escapeHtml(c.cls) + '</span>' : '') +
+              (c.seat ? '<span class="px-2.5 py-1 rounded-lg bg-gray-100 text-gray-700 text-xs font-semibold">座號 ' + escapeHtml(c.seat) + '</span>' : '') +
+              '<span class="text-base sm:text-lg font-bold text-gray-900">' + escapeHtml(c.name) + '</span>' +
+              (c.teacher ? '<span class="text-xs text-gray-400">（簽請：' + escapeHtml(c.teacher) + '）</span>' : '') +
+              '</div>' +
+              '<div class="flex items-center gap-2">' +
+              '<span class="text-xs text-gray-500">原懲處建議：</span>' +
+              '<span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">' + escapeHtml(c.suggestion) + '</span>' +
+              '</div></div>' +
+              '<div class="grid grid-cols-1 lg:grid-cols-12 gap-4 bg-gray-50/90 rounded-xl p-4 border border-gray-100">' +
+              '<div class="lg:col-span-7 space-y-1">' +
+              '<div class="text-xs font-bold text-slateBrand-800 uppercase tracking-wider">懲處事由</div>' +
+              '<p class="text-sm text-gray-800 leading-relaxed whitespace-pre-line">' + escapeHtml(c.reason || '（無）') + '</p>' +
+              '</div>' +
+              '<div class="lg:col-span-5 space-y-2 lg:border-l lg:border-gray-200 lg:pl-4">' +
+              '<div><div class="text-xs font-bold text-slateBrand-800">獎懲條例</div><div class="text-sm font-semibold text-gray-900 mt-0.5">' + escapeHtml(c.rule || '（無）') + '</div></div>' +
+              '<div><div class="text-xs font-bold text-slateBrand-800">條例內容</div><p class="text-xs sm:text-sm text-gray-700 leading-relaxed whitespace-pre-line mt-0.5">' + escapeHtml(c.ruleContent || '（無）') + '</p></div>' +
+              '</div></div>' +
+              '<div class="space-y-3 pt-1">' +
+              '<div class="text-xs font-bold text-gray-600">請選擇本案投票決定 <span class="text-red-500">*</span></div>' +
+              '<div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">' + optionButtonsHtml + '</div>' +
+              '<div class="rounded-xl border transition-all p-4 space-y-3 ' + detailBoxCls + '">' +
+              '<div class="flex flex-wrap items-center justify-between gap-2">' +
+              '<div class="text-xs font-bold text-slateBrand-900">依獎懲會建議－具體處分複選（勾選任一項將自動切換為「依獎懲會建議」）：</div>' +
+              selectedBadgeHtml +
+              '</div>' +
+              '<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2">' + subCheckboxesHtml + '</div>' +
+              otherNoteHtml +
+              '</div></div></div></article>'
+            );
+          })
+          .join('');
+      }
+
+      // 計算各案統計結果
+      function computeCaseStatistics() {
+        var totalBallots = state.ballots.length;
+        return state.cases.map(function (c) {
+          var originalCount = 0;
+          var committeeCount = 0;
+          var validVotes = 0;
+
+          var subCounts = {};
+          COMMITTEE_SUB_OPTIONS.forEach(function (opt) {
+            subCounts[opt] = 0;
+          });
+
+          var otherNotes = [];
+
+          state.ballots.forEach(function (b) {
+            var v = b.votes && b.votes[c.id];
+            if (!v || !v.choice) return;
+            validVotes += 1;
+
+            if (v.choice === DEFAULT_COMMITTEE_OPTION) {
+              committeeCount += 1;
+              var subs = Array.isArray(v.subChoices) ? v.subChoices : [];
+              subs.forEach(function (s) {
+                if (subCounts[s] !== undefined) subCounts[s] += 1;
+              });
+              var note = (v.otherText || '').trim();
+              if (note) otherNotes.push(b.name + '：' + note);
+            } else {
+              originalCount += 1;
+            }
+          });
+
+          var originalRate = validVotes > 0 ? Math.round((originalCount / validVotes) * 1000) / 10 : 0;
+          var committeeRate = validVotes > 0 ? Math.round((committeeCount / validVotes) * 1000) / 10 : 0;
+
+          var decision = '尚無投票';
+          if (validVotes > 0) {
+            if (originalCount === committeeCount) {
+              decision = '同票待議（原建議 ' + originalCount + ' 票 / 依獎懲會建議 ' + committeeCount + ' 票）';
+            } else if (originalCount > committeeCount) {
+              decision = c.suggestion + '（' + originalCount + '/' + validVotes + ' 票，' + originalRate + '%）';
+            } else {
+              var activeSubs = COMMITTEE_SUB_OPTIONS.map(function (opt) {
+                return { opt: opt, count: subCounts[opt] };
+              })
+                .filter(function (x) { return x.count > 0; })
+                .sort(function (a, b) { return b.count - a.count; });
+              var subSummary =
+                activeSubs.length > 0
+                  ? activeSubs.map(function (x) { return x.opt + ' ' + x.count + '票'; }).join('、')
+                  : '未指定具體處分';
+              decision = '依獎懲會建議（' + committeeCount + '/' + validVotes + ' 票，' + committeeRate + '%；' + subSummary + '）';
+            }
+          }
+
+          return {
+            caseItem: c,
+            totalBallots: totalBallots,
+            validVotes: validVotes,
+            originalCount: originalCount,
+            originalRate: originalRate,
+            committeeCount: committeeCount,
+            committeeRate: committeeRate,
+            subCounts: subCounts,
+            otherNotes: otherNotes,
+            decision: decision
+          };
+        });
+      }
+
+      // 渲染即時開票統計與委員票單列表
+      function renderStatisticsPanel() {
+        var ballotsContainer = document.getElementById('ballotsListContainer');
+        var tableContainer = document.getElementById('statsTableContainer');
+
+        if (ballotsContainer) {
+          if (state.ballots.length === 0) {
+            ballotsContainer.innerHTML = '<p class="text-sm text-gray-400 py-6 text-center">目前尚無已送出的委員投票紀錄。</p>';
+          } else {
+            var cardsHtml = state.ballots
+              .map(function (b, idx) {
+                var answeredCount = Object.keys(b.votes || {}).length;
+                return (
+                  '<div class="rounded-xl border border-gray-200 bg-gray-50/70 p-4 flex flex-col justify-between gap-3">' +
+                  '<div class="space-y-1.5">' +
+                  '<div class="flex items-center justify-between gap-2">' +
+                  '<span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slateBrand-100 text-slateBrand-900">' + escapeHtml(b.role) + '</span>' +
+                  '<span class="text-xs text-gray-400">第 ' + (idx + 1) + ' 票</span>' +
+                  '</div>' +
+                  '<div class="text-base font-bold text-gray-900">' + escapeHtml(b.name) + '</div>' +
+                  '<div class="text-xs text-gray-500">已填 ' + answeredCount + ' / ' + state.cases.length + ' 案 • ' + escapeHtml(b.submittedAt || '') + '</div>' +
+                  '</div>' +
+                  '<div class="flex items-center gap-2 pt-2 border-t border-gray-200/80 no-print">' +
+                  '<button type="button" onclick="window.editBallot(\'' + escapeHtml(b.id) + '\')" class="flex-1 py-1.5 px-2.5 rounded-lg bg-white hover:bg-slateBrand-50 text-slateBrand-900 border border-slateBrand-200 text-xs font-bold transition">修改此委員票單</button>' +
+                  '<button type="button" onclick="window.deleteBallot(\'' + escapeHtml(b.id) + '\')" class="py-1.5 px-2.5 rounded-lg bg-white hover:bg-red-50 text-red-700 border border-red-200 text-xs font-bold transition">刪除此票單</button>' +
+                  '</div></div>'
+                );
+              })
+              .join('');
+
+            ballotsContainer.innerHTML =
+              '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">' + cardsHtml + '</div>';
+          }
+        }
+
+        if (tableContainer) {
+          var statsList = computeCaseStatistics();
+          if (statsList.length === 0) {
+            tableContainer.innerHTML = '<p class="text-sm text-gray-400 py-6 text-center">尚無案件資料可統計。</p>';
+            return;
+          }
+
+          var subHeadersHtml = COMMITTEE_SUB_OPTIONS.map(function (opt) {
+            return '<th class="py-2.5 px-2 text-center whitespace-nowrap">' + escapeHtml(opt) + '</th>';
+          }).join('');
+
+          var tableRowsHtml = statsList
+            .map(function (st) {
+              var c = st.caseItem;
+              var subCellsHtml = COMMITTEE_SUB_OPTIONS.map(function (opt) {
+                var cnt = st.subCounts[opt] || 0;
+                return (
+                  '<td class="py-3 px-2 text-center text-xs ' +
+                  (cnt > 0 ? 'font-bold text-slateBrand-900 bg-slateBrand-50/70' : 'text-gray-400') +
+                  '">' +
+                  cnt +
+                  '</td>'
+                );
+              }).join('');
+
+              var otherText = st.otherNotes.length > 0 ? escapeHtml(st.otherNotes.join('；')) : '<span class="text-gray-300">—</span>';
+
+              return (
+                '<tr class="border-b border-gray-200 hover:bg-gray-50/80 align-top">' +
+                '<td class="py-3 px-2.5 text-xs font-bold text-slateBrand-900 whitespace-nowrap">' + escapeHtml(c.no) + '</td>' +
+                '<td class="py-3 px-2.5 text-xs whitespace-nowrap">' +
+                '<div class="font-bold text-gray-900">' + escapeHtml(c.cls) + ' ' + escapeHtml(c.seat ? c.seat + '號' : '') + '</div>' +
+                '<div class="text-gray-700 font-medium">' + escapeHtml(c.name) + '</div>' +
+                '</td>' +
+                '<td class="py-3 px-2.5 text-xs">' +
+                '<div class="font-bold text-amber-900">' + escapeHtml(c.suggestion) + '</div>' +
+                '<div class="text-gray-600 mt-0.5">' + st.originalCount + ' 票 (' + st.originalRate + '%)</div>' +
+                '</td>' +
+                '<td class="py-3 px-2.5 text-xs whitespace-nowrap">' +
+                '<div class="font-bold text-slateBrand-900">' + st.committeeCount + ' 票 (' + st.committeeRate + '%)</div>' +
+                '<div class="text-gray-400 mt-0.5">總票數 ' + st.validVotes + '</div>' +
+                '</td>' +
+                subCellsHtml +
+                '<td class="py-3 px-2.5 text-xs text-gray-700 min-w-[140px]">' + otherText + '</td>' +
+                '<td class="py-3 px-2.5 text-xs min-w-[180px]">' +
+                '<span class="inline-block px-2.5 py-1 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 font-bold leading-snug">' +
+                escapeHtml(st.decision) +
+                '</span></td></tr>'
+              );
+            })
+            .join('');
+
+          tableContainer.innerHTML =
+            '<table class="w-full text-left border-collapse min-w-[1050px]">' +
+            '<thead><tr class="border-b-2 border-gray-200 text-xs font-bold text-gray-600 bg-gray-50">' +
+            '<th class="py-2.5 px-2.5 whitespace-nowrap">案號</th>' +
+            '<th class="py-2.5 px-2.5 whitespace-nowrap">班級座號姓名</th>' +
+            '<th class="py-2.5 px-2.5 whitespace-nowrap">原懲處建議<br/>(票數/得票率)</th>' +
+            '<th class="py-2.5 px-2.5 whitespace-nowrap">依獎懲會建議<br/>(總票數/得票率)</th>' +
+            subHeadersHtml +
+            '<th class="py-2.5 px-2.5 whitespace-nowrap">其他建議彙整</th>' +
+            '<th class="py-2.5 px-2.5 whitespace-nowrap">建議決議結果</th>' +
+            '</tr></thead><tbody>' + tableRowsHtml + '</tbody></table>';
+        }
+      }
+
+      // 渲染整個畫面
+      function renderAll() {
+        var titleEl = document.getElementById('meetingTitleInput');
+        var descEl = document.getElementById('meetingDescInput');
+        var roomEl = document.getElementById('roomCodeInput');
+        if (titleEl && document.activeElement !== titleEl) titleEl.value = state.meetingTitle;
+        if (descEl && document.activeElement !== descEl) descEl.value = state.meetingDesc;
+        if (roomEl && document.activeElement !== roomEl) roomEl.value = state.roomCode;
+
+        renderDraftHeader();
+        renderCasesList();
+        renderStatisticsPanel();
+        updateTopStats();
+      }
+
+      // 分頁切換
+      window.switchTab = function (tabName) {
+        var votePanel = document.getElementById('votePanel');
+        var statsPanel = document.getElementById('statsPanel');
+        var tabVoteBtn = document.getElementById('tabVoteBtn');
+        var tabStatsBtn = document.getElementById('tabStatsBtn');
+        if (!votePanel || !statsPanel || !tabVoteBtn || !tabStatsBtn) return;
+
+        if (tabName === 'stats') {
+          votePanel.classList.add('hidden');
+          statsPanel.classList.remove('hidden');
+          tabStatsBtn.className = 'px-4 py-2 rounded-lg text-sm font-bold bg-white text-slateBrand-900 shadow-sm transition flex items-center gap-1.5';
+          tabVoteBtn.className = 'px-4 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-gray-900 transition';
+          renderStatisticsPanel();
+        } else {
+          statsPanel.classList.add('hidden');
+          votePanel.classList.remove('hidden');
+          tabVoteBtn.className = 'px-4 py-2 rounded-lg text-sm font-bold bg-white text-slateBrand-900 shadow-sm transition';
+          tabStatsBtn.className = 'px-4 py-2 rounded-lg text-sm font-semibold text-gray-600 hover:text-gray-900 transition flex items-center gap-1.5';
+        }
+      };
+
+      // 快捷操作
+      window.selectAllOriginalOption = function () {
+        if (!state.cases.length) {
+          window.showToast('目前沒有可填寫的案件。', 'error');
+          return;
+        }
+        state.cases.forEach(function (c) {
+          state.currentDraft.votes[c.id] = {
+            choice: c.suggestion,
+            subChoices: [],
+            otherText: ''
+          };
+        });
+        renderCasesList();
+        updateTopStats();
+        window.showToast('已為全部 ' + state.cases.length + ' 筆案件勾選「原懲處建議」。', 'info');
+      };
+
+      window.selectAllDefaultOption = function () {
+        if (!state.cases.length) {
+          window.showToast('目前沒有可填寫的案件。', 'error');
+          return;
+        }
+        state.cases.forEach(function (c) {
+          var prev = state.currentDraft.votes[c.id] || {};
+          state.currentDraft.votes[c.id] = {
+            choice: DEFAULT_COMMITTEE_OPTION,
+            subChoices: Array.isArray(prev.subChoices) ? prev.subChoices : [],
+            otherText: prev.otherText || ''
+          };
+        });
+        renderCasesList();
+        updateTopStats();
+        window.showToast('已為全部 ' + state.cases.length + ' 筆案件勾選「' + DEFAULT_COMMITTEE_OPTION + '」。', 'info');
+      };
+
+      window.clearCurrentVotes = function () {
+        state.currentDraft.votes = {};
+        renderCasesList();
+        updateTopStats();
+        window.showToast('已清除本委員目前的案件選擇。', 'info');
+      };
+
+      window.cancelEditBallot = function () {
+        state.currentDraft = { editingId: null, role: '', name: '', votes: {} };
+        renderAll();
+        window.showToast('已取消修改既有票單，恢復為新增委員投票模式。', 'info');
+      };
+
+      // 送出本委員投票
+      window.submitCurrentVote = function () {
+        if (!state.cases.length) {
+          window.showToast('目前尚無案件資料，請先匯入 Excel 或載入範例資料。', 'error');
+          return;
+        }
+
+        var role = (state.currentDraft.role || '').trim();
+        var name = (state.currentDraft.name || '').trim();
+
+        if (!role) {
+          window.showToast('請先選擇「委員身分」（行政代表、教師代表、家長代表或學生代表）。', 'error');
+          return;
+        }
+        if (!name) {
+          window.showToast('請先輸入「委員姓名」。', 'error');
+          var nameInput = document.getElementById('memberNameInput');
+          if (nameInput) nameInput.focus();
+          return;
+        }
+
+        var missingCases = [];
+        var unspecifiedCommitteeCases = [];
+        state.cases.forEach(function (c) {
+          var v = state.currentDraft.votes[c.id];
+          if (!v || !v.choice) {
+            missingCases.push(c.no);
+          } else if (
+            v.choice === DEFAULT_COMMITTEE_OPTION &&
+            (!Array.isArray(v.subChoices) || v.subChoices.length === 0) &&
+            !(v.otherText || '').trim()
+          ) {
+            unspecifiedCommitteeCases.push(c.no);
+          }
+        });
+
+        if (missingCases.length > 0) {
+          window.showToast(
+            '尚有案件未完成投票（編號：' + missingCases.slice(0, 6).join('、') + (missingCases.length > 6 ? ' 等' : '') + '），請逐案勾選後再送出。',
+            'error'
+          );
+          return;
+        }
+
+        var targetId =
+          state.currentDraft.editingId ||
+          ('ballot_' + encodeURIComponent(role) + '_' + encodeURIComponent(name)).replace(/%/g, '_');
+
+        var existingBallot = state.ballots.find(function (b) { return b.id === targetId; });
+        var proceedSubmit = function () {
+          var nowStr = new Date().toLocaleString('zh-TW', { hour12: false });
+          var nowTs = Date.now();
+          var normalizedVotes = {};
+
+          state.cases.forEach(function (c) {
+            var v = state.currentDraft.votes[c.id];
+            var isCommittee = v.choice === DEFAULT_COMMITTEE_OPTION;
+            var cleanSubs = isCommittee && Array.isArray(v.subChoices) ? v.subChoices.slice() : [];
+            var cleanNote = isCommittee ? (v.otherText || '').trim() : '';
+            normalizedVotes[c.id] = {
+              choice: v.choice,
+              subChoices: cleanSubs,
+              otherText: cleanNote,
+              resolvedLabel: resolveVoteLabel(c, { choice: v.choice, subChoices: cleanSubs, otherText: cleanNote })
+            };
+          });
+
+          var ballotPayload = {
+            id: targetId,
+            role: role,
+            name: name,
+            submittedAt: state.currentDraft.editingId || existingBallot ? nowStr + '（已更新）' : nowStr,
+            submittedTs: nowTs,
+            votes: normalizedVotes
+          };
+
+          var idx = state.ballots.findIndex(function (b) { return b.id === targetId; });
+          if (idx >= 0) {
+            state.ballots[idx] = ballotPayload;
+          } else {
+            state.ballots.push(ballotPayload);
+          }
+
+          saveLocalStorage(true);
+
+          if (cloud.connected && cloud.db && cloud.user) {
+            try {
+              getRoomBallotsColRef(state.roomCode)
+                .doc(targetId)
+                .set(ballotPayload)
+                .catch(function (err) {
+                  console.warn('雲端寫入票單略過：', err);
+                });
+            } catch (e) {
+              // 忽略雲端單筆錯誤，本機已完成儲存
+            }
+          }
+
+          var unspecifiedHint =
+            unspecifiedCommitteeCases.length > 0
+              ? '（其中編號 ' + unspecifiedCommitteeCases.join('、') + ' 紀錄為「依獎懲會建議（未指定具體處分）」）'
+              : '';
+
+          state.currentDraft = { editingId: null, role: '', name: '', votes: {} };
+          renderAll();
+          window.showToast('已送出 ' + role + '「' + name + '」的投票紀錄並同步更新統計！' + unspecifiedHint, 'success');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        if (!state.currentDraft.editingId && existingBallot) {
+          openConfirmModal(
+            '委員重複投票確認',
+            role + '「' + name + '」先前已送出過票單，是否要以本次選擇覆蓋更新其投票紀錄？'
+          ).then(function (ok) {
+            if (ok) proceedSubmit();
+          });
+        } else {
+          proceedSubmit();
+        }
+      };
+
+      // 修改既有委員票單
+      window.editBallot = function (ballotId) {
+        var target = state.ballots.find(function (b) { return b.id === ballotId; });
+        if (!target) return;
+
+        var restoredVotes = {};
+        Object.keys(target.votes || {}).forEach(function (caseId) {
+          var v = target.votes[caseId] || {};
+          restoredVotes[caseId] = {
+            choice: v.choice || '',
+            subChoices: Array.isArray(v.subChoices) ? v.subChoices.slice() : [],
+            otherText: v.otherText || ''
+          };
+        });
+
+        state.currentDraft = {
+          editingId: target.id,
+          role: target.role,
+          name: target.name,
+          votes: restoredVotes
+        };
+
+        window.switchTab('vote');
+        renderAll();
+        window.showToast('已載入 ' + target.role + '「' + target.name + '」的票單，修改完成後請點擊「儲存更新此委員票單」。', 'info');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
+      // 刪除既有委員票單
+      window.deleteBallot = function (ballotId) {
+        var target = state.ballots.find(function (b) { return b.id === ballotId; });
+        if (!target) return;
+
+        openConfirmModal(
+          '刪除委員投票紀錄',
+          '確定要刪除 ' + target.role + '「' + target.name + '」的投票紀錄嗎？此動作無法復原。'
+        ).then(function (ok) {
+          if (!ok) return;
+
+          state.ballots = state.ballots.filter(function (b) { return b.id !== ballotId; });
+          if (state.currentDraft.editingId === ballotId) {
+            state.currentDraft = { editingId: null, role: '', name: '', votes: {} };
+          }
+
+          saveLocalStorage(true);
+          if (cloud.connected && cloud.db && cloud.user) {
+            try {
+              getRoomBallotsColRef(state.roomCode).doc(ballotId).delete().catch(function () {});
+            } catch (e) {}
+          }
+
+          renderAll();
+          window.showToast('已刪除 ' + target.role + '「' + target.name + '」的投票紀錄。', 'info');
+        });
+      };
+
+      // 清空所有投票紀錄
+      window.resetAllVotes = function () {
+        if (state.ballots.length === 0 && Object.keys(state.currentDraft.votes).length === 0) {
+          window.showToast('目前沒有任何投票紀錄可清空。', 'info');
+          return;
+        }
+
+        openConfirmModal(
+          '清空所有投票紀錄',
+          '目前共有 ' + state.ballots.length + ' 份已送出委員票單，確定要全部清空嗎？'
+        ).then(function (ok) {
+          if (!ok) return;
+
+          var oldIds = state.ballots.map(function (b) { return b.id; });
+          state.ballots = [];
+          state.currentDraft = { editingId: null, role: '', name: '', votes: {} };
+          saveLocalStorage(true);
+
+          if (cloud.connected && cloud.db && cloud.user) {
+            oldIds.forEach(function (bid) {
+              try {
+                getRoomBallotsColRef(state.roomCode).doc(bid).delete().catch(function () {});
+              } catch (e) {}
+            });
+          }
+
+          renderAll();
+          window.showToast('已清空所有投票紀錄。', 'success');
+        });
+      };
+
+      // 一鍵匯出包含三張工作表的統計 Excel (.xlsx)
+      window.exportVotesToExcel = function () {
+        if (typeof window.XLSX === 'undefined') {
+          window.showToast('Excel 匯出元件（SheetJS）尚未載入完成，請稍後再試。', 'error');
+          return;
+        }
+        if (!state.cases || state.cases.length === 0) {
+          window.showToast('目前沒有案件資料可匯出。', 'error');
+          return;
+        }
+
+        try {
+          var wb = window.XLSX.utils.book_new();
+          var statsList = computeCaseStatistics();
+
+          // 工作表 1：投票統計彙整
+          var summaryRows = statsList.map(function (st) {
+            var c = st.caseItem;
+            var rowObj = {
+              '編號': c.no,
+              '班級': c.cls,
+              '座號': c.seat,
+              '姓名': c.name,
+              '懲處事由': c.reason,
+              '簽請師長': c.teacher || '',
+              '獎懲條例': c.rule,
+              '條例內容': c.ruleContent,
+              '原懲處建議': c.suggestion,
+              '總投票數': st.validVotes,
+              '原懲處建議（得票數）': st.originalCount,
+              '原懲處建議（得票率）': st.originalRate + '%',
+              '依獎懲會建議（得票數）': st.committeeCount,
+              '依獎懲會建議（得票率）': st.committeeRate + '%'
+            };
+
+            COMMITTEE_SUB_OPTIONS.forEach(function (subOpt) {
+              rowObj[subOpt + '（複選票數）'] = st.subCounts[subOpt] || 0;
+            });
+
+            rowObj['其他建議彙整'] = st.otherNotes.length > 0 ? st.otherNotes.join('；') : '';
+            rowObj['最終決議結果'] = st.decision;
+            return rowObj;
+          });
+
+          var wsSummary = window.XLSX.utils.json_to_sheet(summaryRows);
+          window.XLSX.utils.book_append_sheet(wb, wsSummary, '投票統計彙整');
+
+          // 工作表 2：各委員投票明細
+          var detailRows = state.ballots.map(function (b, bIdx) {
+            var rowObj = {
+              '票序': bIdx + 1,
+              '委員身分': b.role,
+              '委員姓名': b.name,
+              '送出時間': b.submittedAt || ''
+            };
+            state.cases.forEach(function (c) {
+              var v = b.votes && b.votes[c.id];
+              var colTitle = c.no + '_' + c.cls + '_' + c.name;
+              rowObj[colTitle] = v ? v.resolvedLabel || resolveVoteLabel(c, v) : '未投票';
+            });
+            return rowObj;
+          });
+
+          var wsDetail = window.XLSX.utils.json_to_sheet(
+            detailRows.length > 0 ? detailRows : [{ '說明': '目前尚無已送出之委員投票紀錄' }]
+          );
+          window.XLSX.utils.book_append_sheet(wb, wsDetail, '各委員投票明細');
+
+          // 工作表 3：原始案件資料
+          var rawCaseRows = state.cases.map(function (c) {
+            return {
+              '編號': c.no,
+              '班級': c.cls,
+              '座號': c.seat,
+              '姓名': c.name,
+              '懲處事由': c.reason,
+              '簽請師長': c.teacher || '',
+              '獎懲條例': c.rule,
+              '條例內容': c.ruleContent,
+              '懲處建議': c.suggestion
+            };
+          });
+          var wsRaw = window.XLSX.utils.json_to_sheet(rawCaseRows);
+          window.XLSX.utils.book_append_sheet(wb, wsRaw, '原始案件資料');
+
+          var safeTitle = (state.meetingTitle || '獎懲委員會投票結果').replace(/[\\/:*?"<>|]/g, '_');
+          var dateStamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+          var fileName = safeTitle + '_投票統計_' + dateStamp + '.xlsx';
+
+          window.XLSX.writeFile(wb, fileName);
+          window.showToast('已成功匯出「' + fileName + '」（含「投票統計彙整」、「各委員投票明細」、「原始案件資料」三張工作表）。', 'success');
+        } catch (err) {
+          window.showToast('匯出 Excel 時發生錯誤：' + (err.message || '未知錯誤'), 'error');
+        }
+      };
+
+      // 綁定標題與說明即時同步輸入事件
+      function bindMetaInputs() {
+        var metaTimer = null;
+        var triggerMetaSync = function () {
+          clearTimeout(metaTimer);
+          metaTimer = setTimeout(function () {
+            syncRoomMetaToCloud();
+          }, 500);
+        };
+
+        var titleEl = document.getElementById('meetingTitleInput');
+        var descEl = document.getElementById('meetingDescInput');
+
+        if (titleEl) {
+          titleEl.addEventListener('input', function (e) {
+            state.meetingTitle = e.target.value;
+            triggerMetaSync();
+          });
+        }
+        if (descEl) {
+          descEl.addEventListener('input', function (e) {
+            state.meetingDesc = e.target.value;
+            triggerMetaSync();
+          });
+        }
+      }
+
+      // 立即初始化（支援 DOMContentLoaded 或已載入完成狀態）
+      function bootstrap() {
+        var autoHydrated = hydrateFirebaseConfigFromUrl();
+        bindMetaInputs();
+        var loaded = loadRoomFromLocalStorage(state.roomCode);
+        if (!loaded) {
+          state.cases = normalizeCases(SAMPLE_CASES);
+          state.sheetNames = ['工作表2（範例）'];
+          state.selectedSheet = '工作表2（範例）';
+          state.sourceLabel = '範例資料（115年11月18日獎懲建議表，共26筆）';
+        }
+        renderSheetSelector();
+        renderAll();
+        initCloudConnection();
+        if (autoHydrated) {
+          window.showToast('已自動套用分享連結中的雲端會議室設定，正在同步最新議程與票數...', 'success');
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bootstrap);
+      } else {
+        bootstrap();
+      }
+    })();
+  </script>
+
+</div></main></body></html>
